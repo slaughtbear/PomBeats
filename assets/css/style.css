@@ -1,0 +1,165 @@
+/* E S T I L O S   G E N E R A L E S */
+/* Fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&family=Fira+Code:wght@300&family=Oswald:wght@200;500&display=swap');
+
+/* I N D E X */
+.parrafo
+{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.contenedor
+{
+    display: flex;
+}
+
+.blanco
+{
+    background-color: white;
+}
+
+.negro
+{
+    color: black;
+}
+
+/* Establece el color blanco para los indicadores del carrusel */
+.carousel-indicators button {
+    background-color: rgb(158, 43, 43) !important;
+    border: 1px solid rgb(158, 43, 43) !important;
+}
+
+/* Establece el color blanco para el texto del subtítulo en el carrusel */
+.carousel-caption h5 {
+    color: white;
+    font-weight: bold;
+}
+
+/* Establece el color blanco para el texto del párrafo en el carrusel */
+.carousel-caption p {
+    color: #ffffff;
+}
+
+
+h1 
+{
+    font-size: 3.5rem;
+    font-family: 'Oswald', sans-serif;}
+
+.bg-custom /* Color de fondo general */
+{
+    background-color: #060606;
+}
+
+.bg-login /* Color de fondo de la caja de login */
+{
+    background-color: #101011;
+}
+
+/* C A J A   D E   L O G I N */
+.bg-img 
+{
+    background-image: url(../img/bg1.jpg);
+    background-position: right;
+    background-repeat: no-repeat; /* Esto indica que el fondo no se va a multiplicar varias veces en la pantalla */
+    background-size: cover; /* "cover" adapta el tamaño del fondo */
+
+}
+
+.btn-custom
+{
+    background-color: rgb(158, 43, 43);
+}
+
+.btn-custom:hover
+{
+    background-color: rgb(209, 5, 5);
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para suavizar el cambio de color de fondo */
+}
+
+
+.custom-input
+{
+    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus 
+{
+    border-color: rgb(209, 5, 5);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+input:hover 
+{
+    border-color: rgb(158, 43, 43); /* Cambia el color del borde al pasar el mouse sobre el input */
+}
+
+/* M O D A L */
+.modal-content, .modal-footer, .modal-header /* Elimina los bordes del formulario del modal */
+{
+    border: none;
+}
+
+body
+{
+    background-color: #060606;
+
+}
+.custom-nav
+{
+    background-color: #101011;;
+}
+
+/* S E R V I C I O S */
+.experiencia
+{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia-titulo
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.experiencia i 
+{
+    font-size: 2rem;
+    color: rgb(158, 43, 43);
+    background-color: rgb(26, 26, 26);
+    border-radius: 50%;
+    padding: 8px 19px;
+}
+
+.badges-contenedor 
+{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge
+{
+    margin: 3px;
+    background-color: rgb(158, 43, 43);
+    color: rgb(255, 255, 255);
+
+}
+
+.experiencia .columna
+{
+    padding: 20px;
+    border: 2px solid rgb(158, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}   
+
+.experiencia .columna:hover
+{
+    background-color: rgb(70, 19, 19);
+}
