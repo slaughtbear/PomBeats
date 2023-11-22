@@ -8,6 +8,7 @@
 <body>
     <div>
         <form action="#">
+            <h2>Registrar</h2>
             <input type="text"  name="titulo" placeholder="Nombre del evento">
             <input type="text"  name="lugar" placeholder="">
             <input type="text"  name="fecha" placeholder="Fecha y hora del evento">
