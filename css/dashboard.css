@@ -15,12 +15,6 @@
     font-family: 'Bebas Neue', sans-serif; /* Fuente de texto */
 }
 
-.seccion-texto /* Clase que se puede reutilizar para los parrafos */
-{
-    font-size: 1.3rem;
-}
-
-
 /* B A R R A   D E   N A V E G A C I O N */
 .navbar /* Esta clase es el contenedor de la barra de navegacion */
 {
@@ -49,21 +43,109 @@
 }
 
 /* S O B R E   N O S O T R O S */
-.sobre-nosotros /* Esta es una clase de la seccion de nosotros */
+.heading
 {
-    padding-bottom: 75px;
-    padding-top: 75px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
 }
 
-.sobre-nosotros img 
+.heading h1
 {
-    width: 300px;
+    font: 50px;
+    margin-bottom: 25px;
+    position: relative;
 }
 
-.sobre-nosotros .row
+.heading h1::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(209, 5, 5);
+}
+
+.heading p
+{
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about 
 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image
+{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image:hover img
+{
+    transform: scale(1.2);
+}
+
+.about-content
+{
+    flex: 1;
+}
+
+.about-content h2
+{
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.about-content p
+{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.about-content .leer-mas
+{
+    display: inline-block;
+    padding: 10px 20px;
+    color:  rgb(255, 255, 255);
+    background-color: rgb(158, 43, 43);
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.about-content .leer-mas:hover
+{
+    background-color: rgb(209, 5, 5);
 }
 
 /* M E D I A   Q U E R Y S */
@@ -74,14 +156,43 @@
         display: none; /* con Display none se oculta el logo cuando la pantalla es de 767px */
     }
 
-    .sobre-nosotros /* Esta es una clase de la seccion de nosotros */
+    /* Seccion Sobre Nosotros */
+    .heading
     {
-        padding-bottom: 45px;
-        padding-top: 45px;
+        padding: 0px 20px;
     }
-    .sobre-nosotros img 
+
+    .heading h1
     {
-        width: 80%;
-        margin-left: 10%;
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .container
+    {
+        padding: 0px;
+    }
+
+    .about
+    {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-image
+    {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .about-content
+    {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .about-content .leer-mas
+    {
+        font-size: 16px;
     }
 }
