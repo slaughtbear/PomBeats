@@ -54,7 +54,11 @@
         echo '
         <script>
             alert("Inténtalo de nuevo, usuario no almacenado");
+<<<<<<< HEAD
             window.location = "index.php";
+=======
+            window.location = "index";
+>>>>>>> 661915477ee5de7afd4def07547720b680a142b3
         </script>
         ';
     }
