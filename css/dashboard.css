@@ -1,0 +1,87 @@
+/* F U E N T E S   D E   T E X T O */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Fuente de texto para los titulos */
+
+/* E S T I L O S   G E N E R A L E S */
+.seccion-oscura /* Clase que se puede reutilizar para una seccion oscura */
+{
+    background-color: black;
+    color: white;
+}
+
+.seccion-titulo /* Clase que se puede reutilizar para los tiutlos */
+{
+    font-size: 4rem; /* Tamaño de texto */
+    padding: 15px 0;
+    font-family: 'Bebas Neue', sans-serif; /* Fuente de texto */
+}
+
+.seccion-texto /* Clase que se puede reutilizar para los parrafos */
+{
+    font-size: 1.3rem;
+}
+
+
+/* B A R R A   D E   N A V E G A C I O N */
+.navbar /* Esta clase es el contenedor de la barra de navegacion */
+{
+    padding: 0.5rem; /* Tamaño */
+    background: linear-gradient(to bottom right, #ff1500, #640000); /* Color */
+}
+
+.navbar-collapse /* Esta clase es el contenedor de los elementos de la barra de navegacion */
+{   /* Justificación */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* C A R R U S E L */
+.c-item /* Esta es una clase personalizada para los items del carrusel */
+{
+    height: 480px; /* Esta propiedad elige el tamaño del recorte del carrusel */
+}
+
+.c-img /* Esta es una clase personalizada para las imagenes del carrusel */
+{
+    height: 100%; /* Esta propiedad elige el arrusel en si mismo */
+    object-fit: cover; /* Esta propiedad justifica la imagen del carrusel */
+    filter: brightness(0.6); /* Filtro oscuro para las imagenes */
+
+}
+
+/* S O B R E   N O S O T R O S */
+.sobre-nosotros /* Esta es una clase de la seccion de nosotros */
+{
+    padding-bottom: 75px;
+    padding-top: 75px;
+}
+
+.sobre-nosotros img 
+{
+    width: 300px;
+}
+
+.sobre-nosotros .row
+{
+    display: flex;
+    align-items: center;
+}
+
+/* M E D I A   Q U E R Y S */
+@media screen and (max-width: 767px) /* Cuando la pantalla tenga un tamaño de 767px entonces... */
+{
+    .navbar-brand /* Esta clase es el contenedor del logo de la barra de navegacion */
+    {
+        display: none; /* con Display none se oculta el logo cuando la pantalla es de 767px */
+    }
+
+    .sobre-nosotros /* Esta es una clase de la seccion de nosotros */
+    {
+        padding-bottom: 45px;
+        padding-top: 45px;
+    }
+    .sobre-nosotros img 
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
