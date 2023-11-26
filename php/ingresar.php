@@ -21,7 +21,7 @@ session_start(); // Inicia sesión
             ';
     } elseif(mysqli_num_rows($validar_login) > 0) {
         $_SESSION['usuario'] = $correo; // Variable que verifica la sesion
-        header("location: index.php");
+        header("location: ../index.php");
         exit;
     } else {
         echo '
