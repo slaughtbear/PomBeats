@@ -5,7 +5,7 @@
     // Definicion de variables
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
-    $usuario = $_POST['usuario']; //knkdnkdkndlamdladlandladnladnladn
+    $usuario = $_POST['usuario']; 
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
 
