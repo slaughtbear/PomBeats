@@ -21,9 +21,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!-- Bootstrap -->
     <link href="css/login.css" rel="stylesheet"> <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> <!-- Iconos de Bootstrap -->
-    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <!-- Icono -->
-    <link rel="icon" type="image/x-icon" href="../img/nav-icon.png">
+    <link rel="icon" type="image/x-icon" href="img/nav-icon.png">
 </head>
 <body class="bg-custom">
     <!-- C A J A   D E   L O G I N -->
@@ -37,7 +37,7 @@
                         <img src="img/logo.png" width="88" alt="Logo">
                     </div>
                     <h2 class="fw-bold text-center py-5">Bienvenido</h2>
-                    <form action="ingresar.php" method="POST">
+                    <form action="php/ingresar.php" method="POST">
                         <div class="mb-4">
                             <label for="correo" class="form-label">Correo electrónico</label>
                             <input type="email" class="form-control custom-input" name="correo" id="correo" require>
@@ -78,7 +78,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="registro.php" method="POST">
+                                        <form action="php/registro.php" method="POST">
                                             <div class="mb-4">
                                                 <label for="nombre" class="form-label text-white">Nombre completo</label>
                                                 <input type="text" class="form-control custom-input" name="nombre" id="nombre" require>
