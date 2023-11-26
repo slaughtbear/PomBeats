@@ -5,7 +5,7 @@
     // Definicion de variables
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
-    $usuario = $_POST['usuario']; 
+    $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
 
@@ -54,7 +54,7 @@
         echo '
         <script>
             alert("Inténtalo de nuevo, usuario no almacenado");
-            window.location = "../index";
+            window.location = "../index.php";
         </script>
         ';
     }
