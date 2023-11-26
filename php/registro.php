@@ -5,7 +5,7 @@
     // Definicion de variables
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
-    $usuario = $_POST['usuario'];
+    $usuario = $_POST['usuario']; //knkdnkdkndlamdladlandladnladnladn
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
 
@@ -19,7 +19,7 @@
         echo '
             <script>
                 alert("Este correo ya está registrado, intenta con otro diferente");
-                window.location = "index.php";
+                window.location = "../index.php";
             </script>
         ';
         exit();
@@ -32,7 +32,7 @@
         echo '
             <script>
                 alert("Este usuario ya está registrado, intenta con otro diferente");
-                window.location = "index.php";
+                window.location = "../index.php";
             </script>
         ';
         exit();
@@ -47,18 +47,14 @@
         echo '
         <script>
             alert("Usuario almacenado exitosamente");
-            window.location = "index.php";
+            window.location = "../index.php";
         </script>
         ';
     } else {
         echo '
         <script>
             alert("Inténtalo de nuevo, usuario no almacenado");
-<<<<<<< HEAD
-            window.location = "index.php";
-=======
-            window.location = "index";
->>>>>>> 661915477ee5de7afd4def07547720b680a142b3
+            window.location = "../index";
         </script>
         ';
     }
