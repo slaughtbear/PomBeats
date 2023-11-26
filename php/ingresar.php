@@ -4,7 +4,7 @@ session_start(); // Inicia sesión
     include 'conexion.php';
 
     // Definicion de variables
-    $correo = $_POST['correo'];
+    $correo = $_POST['correo']; //MAYSCULAS
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena);
     $contrasena2 = $_POST['contrasena2'];
