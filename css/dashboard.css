@@ -188,11 +188,16 @@
     .about-content
     {
         padding: 0px;
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .about-content .leer-mas
     {
         font-size: 16px;
+    }
+
+    .heading h1 
+    {
+        font-size: 50px;
     }
 }
