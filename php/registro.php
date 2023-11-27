@@ -7,7 +7,7 @@
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
-    $contrasena2 = $_POST["contrasena2"];
+    $contrasena2 = $_POST['contrasena2'];
     $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
     
     
