@@ -66,11 +66,16 @@
         ';
     }
 
-    // Se cierra la conexion
-    mysqli_close($conexion);
+    
     }else{
-        echo "Las contrasenas no son iguales";
+        echo '
+        <script>
+            alert("Las contrasenas no son iguales");
+            window.location = "../index.php";
+        </script>
+        ';
     }
 
-    
+    // Se cierra la conexion
+    mysqli_close($conexion);
 ?>
