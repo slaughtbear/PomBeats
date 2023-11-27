@@ -16,17 +16,10 @@
     // Consulta SQL para registrar usuarios
     $query = "INSERT INTO users (nombre, correo, usuario, contrasena, contrasena2) VALUES ('$nombre', '$correo', '$usuario', '$contrasena', '$contrasena2')";
 
-    // Verificar que las contrasenas sean iguales al momento de registrar
-    $verificar_contrasenas = mysqli_query($conexion,"SELECT * FROM users WHERE contrasena = '$contrasena' and contrasena2 = '$contrasena2'");
-
-    if(mysqli_num_rows($contrasena!=$contrasena2)) {
-        echo '
-            <script>
-                alert("Las contrasenas no coinciden, por favor intenta de nuevo");
-                window.location = "../index.php";
-            </script>
-        ';
-        exit();
+    if ($contrasena!=$contrasena2)
+    {
+    echo"Las contrasenas no coinciden, por favor intenta de nuevo";
+    echo'<meta http-equiv="refresh" content="1; url=../index.php">';
     }
 
     // Verificar que el correo no se repita en la base de datos
