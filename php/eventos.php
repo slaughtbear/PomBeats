@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="Uploads.php" methood="POST" enctype="multipart/form-data">
+    <form action="Uploads.php" method="POST" enctype="multipart/form-data">
         <input type="text" name="titulo" placeholder = "titulo" required>
         <input type="text" name ="lugar" placeholder = "lugar" required>
         <input type="date" name ="fecha" placeholder = "fecha" required>
