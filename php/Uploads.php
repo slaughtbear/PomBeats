@@ -1,4 +1,5 @@
 <?php
+ include 'conexion.php';
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -25,7 +26,7 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
 
         if ($check !== false) {
             $portada = $_FILES["portada"]["name"];
-            include 'conexion.php';
+           
 
             // Corrige la ruta del archivo de destino
             //move_uploaded_file($portada_tmp, $ruta);
