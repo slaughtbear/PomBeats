@@ -66,6 +66,9 @@
             window.location = "../index.php";
         </script>
         ';
+        
+    // Se cierra la conexion
+    mysqli_close($conexion);
     }
 
     }else{
@@ -80,6 +83,4 @@
 
    
 
-    // Se cierra la conexion
-    mysqli_close($conexion);
 ?>
