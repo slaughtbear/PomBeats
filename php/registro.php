@@ -19,14 +19,14 @@
     // Verificar que las contrasenas sean iguales al momento de registrar
     $verificar_contrasenas = mysqli_query($conexion,"SELECT * FROM users WHERE contrasena = '$contrasena' and contrasena2 = '$contrasena2'");
 
-    if(mysqli_num_rows($passwrd1!=$passwrd2)) {
+    if($passwrd1!=$passwrd2) {
         echo '
             <script>
                 alert("Las contrasenas no coinciden, por favor intenta de nuevo");
                 window.location = "../index.php";
             </script>
         ';
-        exit();
+        
     }
 
     // Verificar que el correo no se repita en la base de datos
