@@ -1,4 +1,5 @@
 <?php
+
     $conexion = mysqli_connect("127.0.0.1:3306","u666007820_Pombeats","P0mBeat$","u666007820_Pombeats");
 
     if($conexion) // Si los parametros de nuestra conexion son correctos
