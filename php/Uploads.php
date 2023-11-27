@@ -10,23 +10,20 @@ if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
   if($check !== false) {
             $img=$_FILES["fileToUpload"]["name"];
-           
-
+        
             require 'conexion.php';
-
-
-
-            $sql = "INSERT INTO img (fileToUpload)
-            VALUES ('$img')";
-
+            
+            $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion portada)
+            VALUES ('John', 'Doe', 'john@example.com')";
+            
             if ($conn->query($sql) === TRUE) {
-                echo "New record created successfully";
-                header('Location: Mostrarimg.php');
-                } else { 
-                echo "Error: " . $sql . "<br>" . $conn->error;
-                }          
-
-                    $conn->close();
+              echo "New record created successfully";
+            } else {
+              echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+            
+            $conn->close();
+            
         echo "File is an image - " . $check["mime"] . ".";
     echo $target_file;
     $uploadOk = 1;
