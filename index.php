@@ -3,7 +3,7 @@
 
     if(isset($_SESSION['usuario']))
     {
-        header("location: index.php");
+        header("location: php/dashboard.php");
     }
 ?>
 
