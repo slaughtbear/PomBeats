@@ -32,7 +32,7 @@
           <!--Logo-->
           <div class="collapse navbar-collapse" id="navbar-toggler">
             <a class="navbar-brand" href="#">
-                <img src="img/logo-navbar.png" alt="Logo PomBeats" width="65">
+                <img src="../img/logo-navbar.png" alt="Logo PomBeats" width="65">
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
@@ -62,21 +62,21 @@
               </div>
             <div class="carousel-inner">
               <div class="carousel-item active c-item" data-bs-interval="5000">
-                <img src="img/carousel1.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/carousel1.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
                     <p class="mt-5 fs-3 text-uppercase">Promociona tús proyectos</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Eventos Musicales</h1>
                   </div>
               </div>
               <div class="carousel-item c-item" data-bs-interval="5000">
-                <img src="img/carousel2.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/carousel2.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
                     <p class="mt-5 fs-3 text-uppercase">Variedad de eventos</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Diversidad</h1>
                   </div>
               </div>
               <div class="carousel-item c-item" data-bs-interval="5000">
-                <img src="img/carousel3.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/carousel3.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
                     <p class="mt-5 fs-3 text-uppercase">Conecta con artistas locales</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Comunidad</h1>
