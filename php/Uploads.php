@@ -1,3 +1,3 @@
 <?php
-    echo $_FILES=["file"]["name"];
+    echo $_FILES=["poertada"]["name"];
 ?>
