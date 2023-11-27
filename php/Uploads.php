@@ -17,7 +17,7 @@
     if(isset($_POST["submit"])) {
       $check = getimagesize($portada_tmp);
       if($check !== false) {
-                $portada=$_FILES["portada"]["name"];
+                
                
     
                 include 'conexion.php';
