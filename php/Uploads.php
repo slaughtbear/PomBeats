@@ -10,7 +10,7 @@ $uploadOk = 1;
 $target_dir = "../img-events/";
 $uploadOk = 1;
 
-if (isset($_POST["submit"]) && isset($_FILES["portada"])) {
+if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
     $target_file = $target_dir . basename($_FILES["portada"]["name"]);
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
     $portada_tmp = $_FILES["portada"]["tmp_name"];
