@@ -45,7 +45,7 @@
               </li>
               <!--cerrar sesion-->
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Cerrar sesión</a>
+                <a class="nav-link text-white" href="cerrar_sesion.php">Cerrar sesión</a>
               </li>
             </ul>
           </div>
