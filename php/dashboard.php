@@ -112,7 +112,7 @@
     <div class="container">
       <section class="about">
         <div class="about-image">
-          <img src="img/img1.jpg" alt="Imagen Sobre Nosotros">
+          <img src="../img/img1.jpg" alt="Imagen Sobre Nosotros">
         </div>
         <div class="about-content">
           <h2>Creando las bases de tus eventos.</h2>
