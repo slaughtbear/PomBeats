@@ -1,6 +1,6 @@
 <?php
 $target_dir = "img-events";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$target_file = $target_dir . basename($_FILES["portada"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $archivo = $_FILES["portada"]["tmp_name"];
@@ -11,14 +11,14 @@ $fecha = $_POST["fecha"];
 $descripcion = $_POST["descripcion"];
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
-  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+  $check = getimagesize($_FILES["portada"]["tmp_name"]);
   if($check !== false) {
-            $img=$_FILES["fileToUpload"]["name"];
+            $img=$_FILES["portada"]["name"];
         
             require 'conexion.php';
             
             $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion,portada)
-            VALUES ('', 'Doe', 'john@example.com')";
+            VALUES ('$titulo', '$lugar','$fecha','$descripcion', '$portada')";
             
             if ($conn->query($sql) === TRUE) {
               echo "New record created successfully";
