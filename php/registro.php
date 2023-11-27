@@ -11,31 +11,15 @@
     $contrasena2 =$_post["contrasena2"]
     
 
-    // Consulta SQL para registrar usuarios
-    $query = "INSERT INTO users (nombre, correo, usuario, contrasena) VALUES ('$nombre', '$correo', '$usuario', 
-    '$contrasena,$contrasena2')";
+   
 
 //Verificar las contraseñas coincidan 
     if ($contrasena == $contrasena2){
         
-        echo '
-            <script>
-                alert("Este correo ya está registrado, intenta con otro diferente");
-                window.location = "../index.php";
-            </script>
-        ';
-
-    }else{
-        echo '
-        <script>
-            alert("Usuario almacenado exitosamente");
-            window.location = "../index.php";
-        </script>
-        ';
-        
-    }
-
-    // Verificar que el correo no se repita en la base de datos
+         // Consulta SQL para registrar usuarios
+    $query = "INSERT INTO users (nombre, correo, usuario, contrasena) VALUES ('$nombre', '$correo', '$usuario', 
+    '$contrasena')";
+        // Verificar que el correo no se repita en la base de datos
     $verificar_correo = mysqli_query($conexion,"SELECT * FROM users WHERE correo = '$correo' ");
 
     if(mysqli_num_rows($verificar_correo) > 0) {
@@ -82,6 +66,18 @@
         </script>
         ';
     }
+
+    }else{
+        echo '
+        <script>
+            alert("no");
+            window.location = "../index.php";
+        </script>
+        ';
+
+    }
+
+   
 
     // Se cierra la conexion
     mysqli_close($conexion);
