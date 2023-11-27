@@ -7,10 +7,10 @@
 </head>
 <body>
     <form action="Uploads.php" methood = "POST" enctype = "multipart/form-data">
-        <!--<input type="text" name="titulo" placeholder = "titulo" required>
+        <input type="text" name="titulo" placeholder = "titulo" required>
         <input type="text" name ="lugar" placeholder = "lugar" required>
         <input type="date" name ="fecha" placeholder = "fecha" required>
-        <input type="textarea" name ="descripcion" required>-->
+        <input type="textarea" name ="descripcion" required>
         <input type="file" name ="portada" required>
         <input type="submit" name="enviar">
 
