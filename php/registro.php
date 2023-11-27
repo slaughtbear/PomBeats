@@ -7,20 +7,18 @@
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
-    $contrasena2 = $_POST['contrasena2'];
     $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
-    
-    
+    $contrasena2 =$_post["contrasena2"]
+    $contrasena2 = hash('sha512', $contrasena2);
 
-   
+    // Consulta SQL para registrar usuarios
+    $query = "INSERT INTO users (nombre, correo, usuario, contrasena,contrasena2) VALUES ('$nombre', '$correo', '$usuario', 
+    '$contrasena,$contrasena2')";
 
 //Verificar las contraseñas coincidan 
-    if ($contrasena != $contrasena2){
-        
-         // Consulta SQL para registrar usuarios
-    $query = "INSERT INTO users (nombre, correo, usuario, contrasena,contrasena2) VALUES ('$nombre', '$correo', '$usuario', 
-    '$contrasena'$contrasena2)";
-        // Verificar que el correo no se repita en la base de datos
+
+
+    // Verificar que el correo no se repita en la base de datos
     $verificar_correo = mysqli_query($conexion,"SELECT * FROM users WHERE correo = '$correo' ");
 
     if(mysqli_num_rows($verificar_correo) > 0) {
@@ -66,21 +64,8 @@
             window.location = "../index.php";
         </script>
         ';
-        
+    }
+
     // Se cierra la conexion
     mysqli_close($conexion);
-    }
-
-    }else{
-        echo '
-        <script>
-            alert("no");
-            window.location = "../index.php";
-        </script>
-        ';
-
-    }
-
-   
-
 ?>
