@@ -4,7 +4,7 @@ session_start(); // Inicia sesión
     include 'conexion.php';
 
     // Definicion de variables
-    $correo = $_POST['correo']; 
+    $correo = $_POST['correo'];
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena);
     $contrasena2 = $_POST['contrasena2'];
@@ -16,18 +16,18 @@ session_start(); // Inicia sesión
         echo '
         <script>
             alert("Contraseña incorrecta, por favor verifique los datos introducidos");
-            window.location = "../index.php";
+            window.location = "login-register.php";
         </script>
             ';
     } elseif(mysqli_num_rows($validar_login) > 0) {
         $_SESSION['usuario'] = $correo; // Variable que verifica la sesion
-        header("location: deashboard.php");
+        header("location: index.php");
         exit;
     } else {
         echo '
         <script>
             alert("Usuario no existe, por favor verifique los datos introducidos");
-            window.location = "../index.php";
+            window.location = "login-register.php";
         </script>
             ';
             exit;
