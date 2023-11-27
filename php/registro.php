@@ -7,8 +7,9 @@
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
-    $contrasena2 =$_post["contrasena2"]
     $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
+    $contrasena2 =$_post["contrasena2"]
+    $contrasena2 = hash('sha512', $contrasena2);
 
     // Consulta SQL para registrar usuarios
     $query = "INSERT INTO users (nombre, correo, usuario, contrasena) VALUES ('$nombre', '$correo', '$usuario', 
@@ -21,7 +22,7 @@ and contrasena2 != '$contrasena' ");
          if(mysqli_num_rows($Validar_contrasenas) > 0) {
             echo '
             <script>
-            alert("Este correo ya está registrado, intenta con otro diferente");
+            alert("No");
             window.location = "../index.php";
          </script>
         ';
