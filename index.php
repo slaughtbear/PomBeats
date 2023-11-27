@@ -46,11 +46,11 @@
                             <label for="contrasena" class="form-label">Contraseña</label>
                             <input type="password" class="form-control custom-input" name="contrasena" id="contrasena" require>
                         </div>
-                        <!--
+                        
                         <div class="mb-4">
                             <label for="contrasena2" class="form-label">Repite tu contraseña</label>
                             <input type="password" class="form-control custom-input" name="contrasena2" id="contrasena2" require>
-                        </div> -->
+                        </div> 
                         <div class="d-grid">
                             <button type="submit" class="btn btn-custom fw-bold">Iniciar Sesión</button>
                         </div>
