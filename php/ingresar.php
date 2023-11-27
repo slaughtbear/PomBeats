@@ -16,7 +16,7 @@ session_start(); // Inicia sesión
         echo '
         <script>
             alert("Contraseña incorrecta, por favor verifique los datos introducidos");
-            window.location = "login-register.php";
+            window.location = "../index.php";
         </script>
             ';
     } elseif(mysqli_num_rows($validar_login) > 0) {
@@ -27,7 +27,7 @@ session_start(); // Inicia sesión
         echo '
         <script>
             alert("Usuario no existe, por favor verifique los datos introducidos");
-            window.location = "login-register.php";
+            window.location = "../index.php";
         </script>
             ';
             exit;
