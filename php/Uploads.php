@@ -28,7 +28,7 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
             include 'conexion.php';
 
             // Corrige la ruta del archivo de destino
-            move_uploaded_file($portada_tmp, $ruta);
+            //move_uploaded_file($portada_tmp, $ruta);
 
             $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
                     VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada')";
