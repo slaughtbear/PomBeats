@@ -81,23 +81,23 @@
                                         <form action="php/registro.php" method="POST">
                                             <div class="mb-4">
                                                 <label for="nombre" class="form-label text-white">Nombre completo</label>
-                                                <input type="text" class="form-control custom-input" name="nombre" id="nombre" require>
+                                                <input type="text" class="form-control custom-input" name="nombre" id="nombre" required>
                                             </div>
                                             <div class="mb-4">
                                                 <label for="correo" class="form-label">Correo electrónico</label>
-                                                <input type="email" class="form-control custom-input" name="correo" id="correo" require>
+                                                <input type="email" class="form-control custom-input" name="correo" id="correo" required>
                                             </div>
                                             <div class="mb-4">
                                                 <label for="usuario" class="form-label text-white">Usuario</label>
-                                                <input type="text" class="form-control custom-input" name="usuario" id="usuaro" require>
+                                                <input type="text" class="form-control custom-input" name="usuario" id="usuaro" required>
                                             </div>
                                             <div class="mb-4">
                                                 <label for="contrasena" class="form-label">Contraseña</label>
-                                                <input type="password" class="form-control custom-input" name="contrasena" id="contrasena" require>
+                                                <input type="password" class="form-control custom-input" name="contrasena" id="contrasena" required>
                                             </div>
                                             <div class="mb-4">
                                                 <label for="contrasena2" class="form-label">Repite la contraseña</label>
-                                                <input type="password" class="form-control custom-input" name="contrasena2" id="contrasena2" require>
+                                                <input type="password" class="form-control custom-input" name="contrasena2" id="contrasena2" required>
                                             </div>
                                             <div class="d-grid">
                                                 <button type="submit" class="btn btn-custom fw-bold">Registrarme</button>
