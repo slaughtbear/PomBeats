@@ -9,24 +9,30 @@
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
     $contrasena2 =$_post["contrasena2"]
-    $contrasena2 = hash('sha512', $contrasena2);
+    
 
     // Consulta SQL para registrar usuarios
     $query = "INSERT INTO users (nombre, correo, usuario, contrasena) VALUES ('$nombre', '$correo', '$usuario', 
     '$contrasena,$contrasena2')";
 
 //Verificar las contraseñas coincidan 
-$verificar_correo = mysqli_query($conexion,"SELECT * FROM users WHERE contrasena != '$contrasena2' 
-and contrasena2 != '$contrasena' ");
-       
-         if(mysqli_num_rows($Validar_contrasenas) > 0) {
-            echo '
+    if ($contrasena == $contrasena2){
+        
+        echo '
             <script>
-            alert("No");
-            window.location = "../index.php";
-         </script>
+                alert("Este correo ya está registrado, intenta con otro diferente");
+                window.location = "../index.php";
+            </script>
         ';
-        exit();
+
+    }else{
+        echo '
+        <script>
+            alert("Usuario almacenado exitosamente");
+            window.location = "../index.php";
+        </script>
+        ';
+        
     }
 
     // Verificar que el correo no se repita en la base de datos
