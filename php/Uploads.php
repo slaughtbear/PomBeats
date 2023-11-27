@@ -16,7 +16,7 @@ if(isset($_POST["submit"])) {
             $img=$_FILES["portada"]["name"];
         
             require 'conexion.php';
-            
+            echo "si funciono pero"
             $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion,portada)
             VALUES ('$titulo', '$lugar','$fecha','$descripcion', '$portada')";
             
