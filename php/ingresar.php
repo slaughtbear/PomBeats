@@ -1,6 +1,6 @@
 <?php
 session_start(); // Inicia sesión
-session_destroy();
+
     // Conexion con la base de datos
     include 'conexion.php';
 
@@ -33,4 +33,5 @@ session_destroy();
             ';
             exit;
     }
+    session_destroy();
 ?>
