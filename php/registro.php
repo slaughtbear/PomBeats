@@ -3,19 +3,16 @@
     include 'conexion.php';
 
     // Definicion de variables
-    $nombre = $_POST['nombre']; 
+    $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
-    $contrasena2 =$_post["contrasena2"];
+    $contrasena2 = $_POST['contrasena2'];
+    $contrasena2 = hash('sha512', $contrasena2); //Encriptamiento de las contraseñas
 
     // Consulta SQL para registrar usuarios
-    $query = "INSERT INTO users (nombre, correo, usuario, contrasena,contrasena2) VALUES ('$nombre', '$correo', '$usuario', 
-    '$contrasena,$contrasena2')";
-
-    
-
+    $query = "INSERT INTO users (nombre, correo, usuario, contrasena, contrasena2) VALUES ('$nombre', '$correo', '$usuario', '$contrasena', '$contrasena2')";
 
     // Verificar que el correo no se repita en la base de datos
     $verificar_correo = mysqli_query($conexion,"SELECT * FROM users WHERE correo = '$correo' ");
@@ -35,7 +32,6 @@
 
     if(mysqli_num_rows($verificar_usuario) > 0) {
         echo '
-
             <script>
                 alert("Este usuario ya está registrado, intenta con otro diferente");
                 window.location = "../index.php";
