@@ -7,7 +7,7 @@ $uploadOk = 1;
 
 // Verifica si el formulario ha sido enviado y si el campo "portada" está presente en el array $_FILES
 
-$target_dir = "../img-events/";
+$target_dir = "img-events/";
 $uploadOk = 1;
 
 if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
