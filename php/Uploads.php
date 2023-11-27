@@ -6,7 +6,11 @@ $target_dir = "../img-events/";
 $uploadOk = 1;
 
 // Verifica si el formulario ha sido enviado y si el campo "portada" está presente en el array $_FILES
-if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
+
+$target_dir = "../img-events/";
+$uploadOk = 1;
+
+if (isset($_POST["submit"]) && isset($_FILES["portada"])) {
     $target_file = $target_dir . basename($_FILES["portada"]["name"]);
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
     $portada_tmp = $_FILES["portada"]["tmp_name"];
@@ -14,17 +18,16 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
     $lugar = $_POST["lugar"];
     $fecha = $_POST["fecha"];
     $descripcion = $_POST["descripcion"];
-    $ruta = $target_dir . $target_file;
+    $ruta = $target_file;
 
-    // Verifica si la clave "portada" existe en el array $_FILES
     if (array_key_exists("portada", $_FILES)) {
-        // Check if the file is an actual image
         $check = getimagesize($portada_tmp);
 
         if ($check !== false) {
             $portada = $_FILES["portada"]["name"];
             include 'conexion.php';
 
+            // Corrige la ruta del archivo de destino
             move_uploaded_file($portada_tmp, $ruta);
 
             $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
