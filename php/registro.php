@@ -18,8 +18,8 @@
     if ($contrasena == $contrasena2){
         
          // Consulta SQL para registrar usuarios
-    $query = "INSERT INTO users (nombre, correo, usuario, contrasena) VALUES ('$nombre', '$correo', '$usuario', 
-    '$contrasena')";
+    $query = "INSERT INTO users (nombre, correo, usuario, contrasena,contrasena2) VALUES ('$nombre', '$correo', '$usuario', 
+    '$contrasena'$contrasena2)";
         // Verificar que el correo no se repita en la base de datos
     $verificar_correo = mysqli_query($conexion,"SELECT * FROM users WHERE correo = '$correo' ");
 
