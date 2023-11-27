@@ -1,10 +1,10 @@
 <?php
-$target_dir = "uploads/";
+$target_dir = "img-events";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-$archivo = $_FILES["fileToUpload"]["tmp_name"];
-$ruta = "uploads/" . $$target_file;
+$archivo = $_FILES["portada"]["tmp_name"];
+$ruta = "uploads/" . $target_file;
 $titulo =$_POST["titulo"];
 $lugar = $_POST["lugar"];
 $fecha = $_POST["fecha"];
@@ -17,8 +17,8 @@ if(isset($_POST["submit"])) {
         
             require 'conexion.php';
             
-            $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion portada)
-            VALUES ('John', 'Doe', 'john@example.com')";
+            $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion,portada)
+            VALUES ('', 'Doe', 'john@example.com')";
             
             if ($conn->query($sql) === TRUE) {
               echo "New record created successfully";
@@ -34,6 +34,6 @@ if(isset($_POST["submit"])) {
   } else {
     echo "File is not an image.";
     $uploadOk = 0;
-  }pu
+  }
 }
 ?>
