@@ -7,9 +7,11 @@
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
-    $contrasena = hash('sha512', $contrasena); //Encriptamiento de las contraseñas
     $contrasena2 = $_POST['contrasena2'];
-    $contrasena2 = hash('sha512', $contrasena2); //Encriptamiento de las contraseñas
+
+    //Encriptamiento de las contraseñas
+    $contrasena = hash('sha512', $contrasena); 
+    $contrasena2 = hash('sha512', $contrasena2); 
 
     // Consulta SQL para registrar usuarios
     $query = "INSERT INTO users (nombre, correo, usuario, contrasena, contrasena2) VALUES ('$nombre', '$correo', '$usuario', '$contrasena', '$contrasena2')";
