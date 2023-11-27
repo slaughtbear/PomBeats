@@ -1,3 +1,3 @@
 <?php
-    echo $_FILES=["portada"]["name"];
+    echo $_FILES=["file"]["name"];
 ?>
