@@ -17,12 +17,12 @@
     $query = "INSERT INTO users (nombre, correo, usuario, contrasena, contrasena2) VALUES ('$nombre', '$correo', '$usuario', '$contrasena', '$contrasena2')";
 
     // Verificar que las contrasenas sean iguales al momento de registrar
-    $verificar_contrasenas = mysqli_query($conexion,"SELECT * FROM users WHERE contrasena = '$contrasena' and contrasena2 = '$contrasena2' ");
+    $verificar_contrasenas = mysqli_query($conexion,"SELECT * FROM users WHERE contrasena = '$contrasena' and contrasena2 = '$contrasena2'");
 
-    if(mysqli_num_rows($verificar_correo) > 0) {
+    if(mysqli_num_rows($passwrd1!=$passwrd2)) {
         echo '
             <script>
-                alert("Este correo ya está registrado, intenta con otro diferente");
+                alert("Las contrasenas no coinciden, por favor intenta de nuevo");
                 window.location = "../index.php";
             </script>
         ';
