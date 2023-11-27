@@ -5,6 +5,10 @@ $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $archivo = $_FILES["fileToUpload"]["tmp_name"];
 $ruta = "uploads/" . $$target_file;
+$titulo =$_POST["titulo"];
+$lugar = $_POST["lugar"];
+$fecha = $_POST["fecha"];
+$descripcion = $_POST["descripcion"];
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -30,6 +34,6 @@ if(isset($_POST["submit"])) {
   } else {
     echo "File is not an image.";
     $uploadOk = 0;
-  }
+  }pu
 }
 ?>
