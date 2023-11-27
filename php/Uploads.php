@@ -1,14 +1,15 @@
 <?php
     
 
-    $titulo=$_POST["titulo"];
-    $lugar=$_POST["lugar"];
-    $fecha=$_POST["fecha"];
-    $descripcion=$_POST["descripcion"];
+   ;
     $target_file = $target_dir . basename($_FILES["portada"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
     $portada = $_FILES["portada"]["tmp_name"];
+    $titulo=$_POST["titulo"];
+    $lugar=$_POST["lugar"];
+    $fecha=$_POST["fecha"];
+    $descripcion=$_POST["descripcion"]
     $ruta = "../img-events" . $target_file;
     // Check if image file is a actual image or fake image
     if(isset($_POST["submit"])) {
@@ -19,7 +20,7 @@
     
                 include 'conexion.php';
     
-    
+                move_uploaded_file($portada,$ruta);
     
                 $sql = "INSERT INTO eventos (titulo,lugar,fecha,descripcion,
                 portada)
