@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$target_dir = "../img-events/";
+$target_dir = "img-events/";
 $uploadOk = 1;
 
 // Verifica si el formulario ha sido enviado y si el campo "portada" está presente en el array $_FILES
