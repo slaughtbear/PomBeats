@@ -46,6 +46,7 @@ and contrasena2 = '$contrasena2' ");
 
     if(mysqli_num_rows($verificar_usuario) > 0) {
         echo '
+        
             <script>
                 alert("Este usuario ya está registrado, intenta con otro diferente");
                 window.location = "../index.php";
