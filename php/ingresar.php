@@ -28,7 +28,7 @@
         echo '
         <script>
             alert("Usuario no existe, por favor verifique los datos introducidos");
-            window.location = "../index.php";
+            window.location = "ingresar.php";
         </script>
             ';
             exit;
