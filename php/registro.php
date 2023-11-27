@@ -3,7 +3,7 @@
     include 'conexion.php';
 
     // Definicion de variables
-    $nombre = $_POST['nombre']; // MAYUSCULAS
+    $nombre = $_POST['nombre']; 
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
