@@ -13,15 +13,12 @@
     $contrasena = hash('sha512', $contrasena); 
     $contrasena2 = hash('sha512', $contrasena2); 
 
+    
+
+    if ($contrasena == $contrasena2)
+    {
     // Consulta SQL para registrar usuarios
     $query = "INSERT INTO users (nombre, correo, usuario, contrasena, contrasena2) VALUES ('$nombre', '$correo', '$usuario', '$contrasena', '$contrasena2')";
-
-    if ($contrasena!=$contrasena2)
-    {
-    echo"Las contrasenas no coinciden, por favor intenta de nuevo";
-    echo'<meta http-equiv="refresh" content="1; url=../index.php">';
-    }
-
     // Verificar que el correo no se repita en la base de datos
     $verificar_correo = mysqli_query($conexion,"SELECT * FROM users WHERE correo = '$correo' ");
 
@@ -71,4 +68,9 @@
 
     // Se cierra la conexion
     mysqli_close($conexion);
+    }else{
+        echo "Las contrasenas no son iguales";
+    }
+
+    
 ?>
