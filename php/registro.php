@@ -14,7 +14,7 @@
    
 
 //Verificar las contraseñas coincidan 
-    if ($contrasena == $contrasena2){
+    if ($contrasena != $contrasena2){
         
          // Consulta SQL para registrar usuarios
     $query = "INSERT INTO users (nombre, correo, usuario, contrasena) VALUES ('$nombre', '$correo', '$usuario', 
