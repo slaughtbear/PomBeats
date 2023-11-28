@@ -41,7 +41,7 @@
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href= "eventos.php">Eventos</a>
+                <a class="nav-link active text-white" aria-current="page" href= "galeriaEventos.php">Eventos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="ingles.php">Traducir</a>
