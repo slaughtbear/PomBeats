@@ -42,7 +42,7 @@ $conexion->close();
     </form>
 
     
-   <img src="../public/img-events <?php echo $portada;?>" >
+  
    <?php
   echo $titulo;
 ?>
