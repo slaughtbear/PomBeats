@@ -10,7 +10,6 @@ session_start(); // Inicia sesión
     $contrasena = hash('sha512', $contrasena);
     $contrasena2 = $_POST['contrasena2'];
     $contrasena2 = hash('sha512', $contrasena2);
-    $rol = 0;
 
     // Validacion de usuario
     $validar_login = mysqli_query($conexion, "SELECT * FROM users WHERE correo = '$correo' and contrasena = '$contrasena'");
@@ -22,19 +21,23 @@ session_start(); // Inicia sesión
             window.location = "../index.php";
         </script>
             ';
-    } elseif ($rol=1) {
-        header("location: https://www.youtube.com/watch?v=AWjCxj9D_Ko&t=32s");
     } elseif(mysqli_num_rows($validar_login) > 0) {
         $_SESSION['usuario'] = $correo; // Variable que verifica la sesion
-        header("location: dashboard.php");
-        exit;
+        $rol = $usuario['rol']; // Obtener el rol del usuario desde la base de datos
+        if ($rol == 1) {
+            header("Location: https://www.youtube.com/watch?v=AWjCxj9D_Ko&t=32s");
+            exit;
+        } else {
+            header("Location: dashboard.php");
+            exit;
+        }
     } else {
         echo '
         <script>
-            alert("Usuario no existe, por favor verifique los datos introducidos");
+            alert("Usuario no existe o contraseña incorrecta, por favor verifique los datos introducidos");
             window.location = "ingresar.php";
         </script>
             ';
-            exit;
+        exit;
     }
-?>
+    ?>
