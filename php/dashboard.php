@@ -155,7 +155,7 @@
 
     <!-- F O O T E R -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-      <img class="footer-logo" src="img/granada.png" alt="Logo">
+      <img class="footer-logo" src="../img/granada.png" alt="Logo">
       <p class="footer-texto text-center">Creando las bases de tus eventos. <br> ¡Publicita tus conciertos y festivales!</p>
       <div class="iconos-redes d-flex flex-wrap align-items-center justify-content-center">
         <!--Correo -->
