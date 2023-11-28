@@ -14,8 +14,6 @@
     $contrasena = hash('sha512', $contrasena); 
     $contrasena2 = hash('sha512', $contrasena2); 
 
-    
-
     if ($contrasena == $contrasena2)
     {
     // Consulta SQL para registrar usuarios
