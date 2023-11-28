@@ -42,7 +42,7 @@ $conexion->close();
         <input type="submit" name="enviar">
     </form>
 
-   <img src="../public/img-events <?php echo $portada;?>" alt="">
+   <img src="../public/img-events <?php echo $portada;?>" >
 
 </body>
 </html>
