@@ -94,6 +94,7 @@ ini_set('display_errors', '1');
             <div class="about-content">
               <h2>Sube y promociona tús eventos</h2>
               <p>En esta sección aparecerán los eventos disponibles en tú comunidad.</p>
+              <p><?php echo $titulo;?></p>
               <a type="button" href ="eventos.php" class="leer-mas" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Crear Evento
               </a>
@@ -126,7 +127,7 @@ ini_set('display_errors', '1');
           <div class="mb-4">
               <label for="descripcion" class="form-label">Descripción</label>
               <input type="text" class="form-control custom-input" name="descripcion" id="descripcion" required>
-              <p><?php echo $titulo;?></p>
+              
           </div>
           <!--
           <div class="mb-4">
