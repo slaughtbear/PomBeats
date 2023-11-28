@@ -4,9 +4,7 @@ ini_set('display_errors', '1');
 
    include 'conexion.php';
    $idEVENTOS=$_GET["idEventos"];
-   if($idEventos == ""){
-    echo "no hay"
-   }
+  
 $sql = "SELECT * FROM eventos where idEventos = $idEventos";
 $result = $conexion->query($sql);
 
