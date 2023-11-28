@@ -5,7 +5,7 @@ if ($idproducto=="") {
   
 }
 
-            include"conexion.php";
+            include "conexion.php";
             // Create connection
             $conn = new mysqli($servername, $username, $password, $dbname);
             // Check connection
