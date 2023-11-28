@@ -43,6 +43,7 @@ $conexion->close();
 
    <?php 
     echo $titulo;
+    echo $portada;
    ?>
 
 </body>
