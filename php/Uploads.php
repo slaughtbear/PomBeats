@@ -3,6 +3,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
+$titulo = $_POST['titulo'];
+$lugar = $_POST['lugar'];
+$fecha = $_POST['fecha'];
+
 // Use prepared statements to prevent SQL injection
 $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
  VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada')";
