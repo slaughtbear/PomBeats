@@ -36,7 +36,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
             <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="Logo PomBeats" width="65">
+                <img src="../img/logo.png" alt="Logo PomBeats" width="65">
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
@@ -52,13 +52,13 @@
         <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active c-item" data-bs-interval="5000">
-                <img src="img/portada1.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/portada1.jpg" class="d-block w-100 c-img" alt="...">
               </div>
               <div class="carousel-item c-item" data-bs-interval="5000">
-                <img src="img/portada2.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/portada2.jpg" class="d-block w-100 c-img" alt="...">
               </div>
               <div class="carousel-item c-item" data-bs-interval="5000">
-                <img src="img/portada3.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/portada3.jpg" class="d-block w-100 c-img" alt="...">
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@
         <div class="container">
           <section class="about">
             <div class="about-image pb-5">
-              <img src="img/galeria.jpg" alt="Imagen galeria">
+              <img src="../img/galeria.jpg" alt="Imagen galeria">
             </div>
             <div class="about-content">
               <h2>Sube y promociona tús eventos</h2>
