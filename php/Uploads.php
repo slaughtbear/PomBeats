@@ -20,7 +20,7 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
     $lugar = $_POST["lugar"];
     $fecha = $_POST["fecha"];
     $descripcion = $_POST["descripcion"];
-    $ruta = "img-events" . $portada_tmp;
+    $ruta = $target_dir . $portada_tmp;
 
     if (array_key_exists("portada", $_FILES)) {
         $check = getimagesize($portada_tmp);
