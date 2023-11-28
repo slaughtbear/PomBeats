@@ -23,7 +23,7 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
 
         if ($check !== false) {
             // Mueve el archivo cargado a la ubicación deseada
-            move_uploaded_file($portada_tmp, $target_file);
+           // move_uploaded_file($portada_tmp, $target_file);
 
             // Evita la redundancia en la definición de $target_dir
             $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
