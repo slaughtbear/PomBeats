@@ -11,7 +11,8 @@
         session_destroy();
         die();
     }
-  
+  ?>
+  <?php
   include "conexion.php";
   $sql = "SELECT * FROM eventos";
   $result = $conn->query($sql);
