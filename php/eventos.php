@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
     $lugar=$row["lugar"];
     $fecha=$row["fecha"];
     $descripcion=$row["descripcion"];
-    $portada=$row["posrtada"];
+    $portada=$row["portada"];
 
   }
 } else {
