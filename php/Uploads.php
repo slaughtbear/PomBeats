@@ -29,7 +29,7 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
 
             if ($conexion->query($sql) === TRUE) {
                 echo "New record created successfully";
-                // header('Location: Mostrarimg.php');
+                header('Location: eventos.php');
             } else {
                 echo "Error: " . $sql . "<br>" . $conexion->error;
             }
