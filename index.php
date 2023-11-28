@@ -8,7 +8,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="en" data-bs-theme="dark">
 <head>
 <title>Bienvenido a PomBeats</title>
     <!-- M E T A D A T O S -->
