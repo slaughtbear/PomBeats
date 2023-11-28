@@ -39,10 +39,10 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
                 echo "New record created successfully";
                 // header('Location: Mostrarimg.php');
             } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                echo "Error: " . $sql . "<br>" . $conexion->error;
             }
 
-            $conn->close();
+            $conexion->close();
 
             echo "File is an image - " . $check["mime"] . ".";
             echo $target_file;
