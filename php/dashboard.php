@@ -63,7 +63,7 @@
               </div>
             <div class="carousel-inner">
               <div class="carousel-item active c-item" data-bs-interval="5000">
-                <img src="img/carousel1.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/carousel1.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
                     <p class="mt-5 fs-3 text-uppercase">Promociona tús proyectos</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Eventos Musicales</h1>
