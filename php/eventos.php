@@ -42,10 +42,7 @@ $conexion->close();
         <input type="submit" name="enviar">
     </form>
 
-   <?php 
-    echo $titulo;
-    echo $portada;
-   ?>
+   <img src="<?php echo $portada;?>" alt="">
 
 </body>
 </html>
