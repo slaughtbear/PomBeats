@@ -29,10 +29,7 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
             // Mueve el archivo cargado a la ubicación deseada
            move_uploaded_file($portada_tmp, $ruta);
 
-            // Evita la redundancia en la definición de $target_dir
-            $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
-                    VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$target_file')";
-
+           
             if ($conexion->query($sql) === TRUE) {
                 echo "New record created successfully";
                 header('Location: eventos.php');
@@ -55,5 +52,21 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
 } else {
     echo "Formulario no enviado o campo 'portada' no presente en el array \$_FILES.";
 }
+ // Evita la redundancia en la definición de $target_dir
+ $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
+ VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$target_file')";
+$sql->bind_param("ssssssssss", $Name, $Model, $Price, $Description, $Img, $Size, $ColorName, $StyleName, $BrandName, $Stock);
+
+if ($sql->execute()) {
+    echo "Registro exitoso";
+    echo '<script>
+            setTimeout(function() {
+                window.location.href = "tablaagregar.php";
+            }, 0);
+          </script>';
+} else {
+    echo "Error: " . $sql->error;
+}
+
 ?>
 
