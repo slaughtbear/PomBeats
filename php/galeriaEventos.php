@@ -35,7 +35,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="dashboard.php">
                 <img src="../img/logo.png" alt="Logo PomBeats" width="65">
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
