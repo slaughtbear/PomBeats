@@ -1,62 +1,64 @@
+ 
 <?php
 
-// En el código PHP
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+// Retrieve form data
+$titulo = $_POST['titulo'];
+$lugar = $_POST['lugar'];
+$fecha = $_POST['fecha'];
+$description = $_POST['Description'];
+$portada = $_FILES['portada']['name'];
 
-include 'conexion.php';
-
-
-$target_dir = "../public/img-events";
+// File upload settings
+$target_dir = "../public/img-events/";
+$target_file = $target_dir . basename($_FILES["portada"]["name"]);
 $uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-// Verifica si el formulario ha sido enviado y si el campo "portada" está presente en el array $_FILES
-
-if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
-    $target_file = $target_dir . basename($_FILES["portada"]["name"]);
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-    $portada_tmp = $_FILES["portada"]["tmp_name"];
-    $titulo = $_POST["titulo"];
-    $lugar = $_POST["lugar"];
-    $fecha = $_POST["fecha"];
-    $descripcion = $_POST["descripcion"];
-    $ruta = $target_dir . $portada_tmp;
-
-    if (array_key_exists("portada", $_FILES)) {
-        $check = getimagesize($portada_tmp);
-
-        if ($check !== false) {
-            // Mueve el archivo cargado a la ubicación deseada
-           move_uploaded_file($portada_tmp, $ruta);
-
-           
-            if ($conexion->query($sql) === TRUE) {
-                echo "New record created successfully";
-                header('Location: eventos.php');
-            } else {
-                echo "Error: " . $sql . "<br>" . $conexion->error;
-            }
-
-            $conexion->close();
-
-            echo "File is an image - " . $check["mime"] . ".";
-            echo $target_file;
-            $uploadOk = 1;
-        } else {
-            echo "File is not an image.";
-            $uploadOk = 0;
-        }
-    } else {
-        echo "La clave 'portada' no está presente en el array \$_FILES.";
+// Check if image file is a valid image
+if (isset($_POST["submit"])) {
+    $check = getimagesize($_FILES["portada"]["tmp_name"]);
+    if ($check === false) {
+        echo "File is not an image.";
+        $uploadOk = 0;
     }
-} else {
-    echo "Formulario no enviado o campo 'portada' no presente en el array \$_FILES.";
 }
- // Evita la redundancia en la definición de $target_dir
- $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
- VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$target_file')";
 
-$sql->bind_param("ssssssssss", $titulo, $lugar, $fecha, $description, $target_file);
+// Check if file already exists
+if (file_exists($target_file)) {
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
+}
+
+// Check file size
+if ($_FILES["portada"]["size"] > 50000000000000) {
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
+}
+
+// Allow certain file formats
+$allowedFormats = array("jpg", "jpeg", "png", "gif");
+if (!in_array($imageFileType, $allowedFormats)) {
+    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    $uploadOk = 0;
+}
+
+// Check if $uploadOk is set to 0 by an error
+if ($uploadOk == 0) {
+    echo "Sorry, your file was not uploaded.";
+} else {
+    // Move the uploaded file to the target directory
+    if (move_uploaded_file($_FILES["portada"]["tmp_name"], $target_file)) {
+        echo "The file " . htmlspecialchars(basename($_FILES["portada"]["name"])) . " has been uploaded.";
+    } else {
+        echo "Sorry, there was an error uploading your file.";
+    }
+}
+
+// Use prepared statements to prevent SQL injection
+$sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
+ VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada')";
+
+$sql->bind_param("ssssssssss", $titulo, $lugar, $fecha, $descripcion, $portada);
 
 if ($sql->execute()) {
     echo "Registro exitoso";
@@ -66,8 +68,10 @@ if ($sql->execute()) {
             }, 0);
           </script>';
 } else {
-    echo "Error: " . $sql->error;
+    echo "Error: " . $sql->error;
 }
 
+// Close the connection after use
+$conn->close();
 ?>
 
