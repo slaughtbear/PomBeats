@@ -22,7 +22,6 @@
       echo '
       <h2>'. $row["titulo"].'</h2>
       <p>'. $row["descripcion"].'</p>
-      <a href="pagina_nueva.html" class="boton">Ir al evento</a>
       ';
     }
   } else {
