@@ -11,7 +11,25 @@
         session_destroy();
         die();
     }
-?>
+  
+  include "conexion.php";
+  $sql = "SELECT * FROM eventos";
+  $result = $conn->query($sql);
+
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      echo '
+      <h2>'. $row["titulo"].'</h2>
+      <p>'. $row["descripcion"].'</p>
+      <a href="pagina_nueva.html" class="boton">Ir al evento</a>
+      ';
+    }
+  } else {
+    echo "0 results";
+  }
+  $conn->close();
+  ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -124,29 +142,9 @@
     </div>
   </div>
 </div>
-
-<div class="evento-container">
-  <?php
-  include "conexion.php";
-  $sql = "SELECT * FROM eventos";
-  $result = $conn->query($sql);
-
-  if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-      echo '
-      <h2>'. $row["titulo"].'</h2>
-      <p>'. $row["descripcion"].'</p>
-      <a href="pagina_nueva.html" class="boton">Ir al evento</a>
-      ';
-    }
-  } else {
-    echo "0 results";
-  }
-  $conn->close();
-  ?>
-</div>
-
+<?php
+echo $titulo;
+?>
 
     <footer>
       <div class="derechos-autor text-center">PomBeats (2023) &#169;</div>
