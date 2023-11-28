@@ -1,0 +1,208 @@
+/* E S T I L O S   G E N E R A L E S */
+.seccion-oscura /* Clase que se puede reutilizar para una seccion oscura */
+{
+    background-color: black;
+    color: white;
+}
+
+.seccion-guinda
+{
+    background-color: rgb(39, 15, 15);
+    color: white;
+}
+
+.seccion-titulo /* Clase que se puede reutilizar para los tiutlos */
+{
+    font-size: 4rem; /* Tamaño de texto */
+    padding: 15px 0;
+    font-family: 'Bebas Neue', sans-serif; /* Fuente de texto */
+}
+
+/* B A R R A   D E   N A V E G A C I O N */
+.navbar /* Esta clase es el contenedor de la barra de navegacion */
+{
+    padding: 0.5rem; /* Tamaño */
+    background: linear-gradient(to bottom right, #ff1500, #640000); /* Color */
+}
+
+.navbar-collapse /* Esta clase es el contenedor de los elementos de la barra de navegacion */
+{   /* Justificación */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* P O R T A D A */
+.c-item /* Esta es una clase personalizada para los items del carrusel */
+{
+    height: 400px; /* Esta propiedad elige el tamaño del recorte del carrusel */
+}
+
+.c-img /* Esta es una clase personalizada para las imagenes del carrusel */
+{
+    height: 100%; /* Esta propiedad elige el arrusel en si mismo */
+    object-fit: cover; /* Esta propiedad justifica la imagen del carrusel */
+    filter: brightness(0.3); /* Filtro oscuro para las imagenes */
+
+}
+
+/* G A L E R I A */
+.heading
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1
+{
+    font: 50px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(209, 5, 5);
+}
+
+.heading p
+{
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image
+{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    filter: brightness(0.5); /* Filtro oscuro para las imagenes */
+}
+
+.about-image img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image:hover img
+{
+    transform: scale(1.2);
+}
+
+.about-content
+{
+    flex: 1;
+}
+
+.about-content h2
+{
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.about-content p
+{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.about-content .leer-mas
+{
+    display: inline-block;
+    padding: 10px 20px;
+    color:  rgb(255, 255, 255);
+    background-color: rgb(158, 43, 43);
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.about-content .leer-mas:hover
+{
+    background-color: rgb(209, 5, 5);
+}
+
+/* M O D A L */
+.modal-content, .modal-footer, .modal-header /* Elimina los bordes del formulario del modal */
+{
+    border: none;
+    background-color: rgb(48, 9, 9);
+
+}
+
+/* E V E N T O S */
+.evento-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  rgb(158, 43, 43);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color:  rgb(209, 5, 5);
+  }
+  
+
+/* F O O T E R */
+.derechos-autor
+{
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+}
+
+/*  R E S P O N S I V E */
+@media screen and (max-width: 767px) /* Cuando la pantalla tenga un tamaño de 767px entonces... */
+{
+    .navbar-brand /* Esta clase es el contenedor del logo de la barra de navegacion */
+    {
+        display: none; /* con Display none se oculta el logo cuando la pantalla es de 767px */
+    }
+
+    .evento-container 
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
