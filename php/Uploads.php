@@ -1,5 +1,5 @@
 <?php
-  include 'conexion.php';
+include 'conexion.php';
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -9,9 +9,6 @@ $uploadOk = 1;
 
 // Verifica si el formulario ha sido enviado y si el campo "portada" está presente en el array $_FILES
 
-$target_dir = "img-events/";
-$uploadOk = 1;
-
 if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
     $target_file = $target_dir . basename($_FILES["portada"]["name"]);
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -20,22 +17,19 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
     $lugar = $_POST["lugar"];
     $fecha = $_POST["fecha"];
     $descripcion = $_POST["descripcion"];
-    $ruta = $target_file;
 
     if (array_key_exists("portada", $_FILES)) {
         $check = getimagesize($portada_tmp);
 
         if ($check !== false) {
-           
-           
+            // Mueve el archivo cargado a la ubicación deseada
+            move_uploaded_file($portada_tmp, $target_file);
 
-            // Corrige la ruta del archivo de destino
-            //move_uploaded_file($portada_tmp, $ruta);
+            // Evita la redundancia en la definición de $target_dir
+            $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
+                    VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$target_file')";
 
-            $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada,)
-                    VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada')";
-
-            if ($conexion->mysqli_query($sql) === TRUE) {
+            if ($conexion->query($sql) === TRUE) {
                 echo "New record created successfully";
                 // header('Location: Mostrarimg.php');
             } else {
