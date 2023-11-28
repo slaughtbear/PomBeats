@@ -110,10 +110,12 @@
               <label for="descripcion" class="form-label">Descripción</label>
               <input type="text" class="form-control custom-input" name="descripcion" id="descripcion" required>
           </div>
+          <!--
           <div class="mb-4">
               <label for="portada" class="form-label">Portada</label>
               <input type="file" class="form-control custom-input" name="portada" id="portada" required>
           </div>
+          -->
           <div class="d-grid">
             <button type="submit" class="btn btn-custom fw-bold">Registrarme</button>
           </div>
