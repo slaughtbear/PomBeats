@@ -41,11 +41,11 @@ $conexion->close();
         <input type="file" name="portada" required>
         <input type="submit" name="enviar">
     </form>
-<?php
-  echo $titulo;
-?>
+
     
    <img src="../public/img-events <?php echo $portada;?>" >
-
+   <?php
+  echo $titulo;
+?>
 </body>
 </html>
