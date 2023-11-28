@@ -118,6 +118,9 @@
       <div class="container text-center">
         <div class="row">
           <!-- P R O M O C I O N -->
+          <div class="heading">
+            <h1 class="seccion-titulo">Servicios</h1>
+          </div>
           <div class="columna col-12 col-md-4">
             <i class="bi bi-graph-up-arrow"></i>
             <p class="servicios-titulo">Promoción</p>
