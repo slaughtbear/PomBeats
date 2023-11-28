@@ -5,7 +5,7 @@ ini_set('display_errors', '1');
    include 'conexion.php';
    
   
-$sql = "SELECT * FROM eventos where idEventos = $idEventos";
+$sql = "SELECT * FROM eventos";
 $result = $conexion->query($sql);
 
 if ($result->num_rows > 0) {
