@@ -1,8 +1,10 @@
 <?php
+  include 'conexion.php';
+
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$target_dir = "../img-events/";
+$target_dir = "img-events/";
 $uploadOk = 1;
 
 // Verifica si el formulario ha sido enviado y si el campo "portada" está presente en el array $_FILES
@@ -25,15 +27,15 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
 
         if ($check !== false) {
             $portada = $_FILES["portada"]["name"];
-            include 'conexion.php';
+           
 
             // Corrige la ruta del archivo de destino
-            move_uploaded_file($portada_tmp, $ruta);
+            //move_uploaded_file($portada_tmp, $ruta);
 
             $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
                     VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada')";
 
-            if ($conn->query($sql) === TRUE) {
+            if ($conexion->query($sql) === TRUE) {
                 echo "New record created successfully";
                 // header('Location: Mostrarimg.php');
             } else {
