@@ -142,9 +142,7 @@
     </div>
   </div>
 </div>
-<?php
-echo $titulo;
-?>
+
 
     <footer>
       <div class="derechos-autor text-center">PomBeats (2023) &#169;</div>
