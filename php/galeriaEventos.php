@@ -17,7 +17,7 @@ ini_set('display_errors', '1');
   <?php
   include "conexion.php";
   $sql = "SELECT * FROM eventos";
-  $result = $conn->query($sql);
+  $result = $conexion->query($sql);
 
   if ($result->num_rows > 0) {
     // output data of each row
