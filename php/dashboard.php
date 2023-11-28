@@ -46,7 +46,7 @@
                 <a class="nav-link text-white" href="#">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Cerrar sesión</a>
+                <a class="nav-link text-white" href="../index.php">Cerrar sesión</a>
               </li>
             </ul>
           </div>
