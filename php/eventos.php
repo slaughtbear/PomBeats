@@ -16,7 +16,27 @@
         <input type="submit" name="enviar">
     </form>
 
-    
+    <?php
+   include 'conexion.php';
+   $idEventos=$_GET["idEventos"];
+$sql = "SELECT * FROM eventos where idEvntos = '$idEventos'";
+$result = $conexion->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    $titulo=$row["titulo"];
+    $lugar=$row["lugar"];
+    $fecha=$row["fecha"];
+    $descripcion=$row["descripcion"];
+    $portada=$row["posrtada"];
+
+  }
+} else {
+  echo "0 results";
+}
+$conexion->close();
+?>*/
 
 </body>
 </html>
