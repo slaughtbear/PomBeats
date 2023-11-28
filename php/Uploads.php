@@ -35,7 +35,7 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
             $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada,)
                     VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada')";
 
-            if ($conn->query($sql) === TRUE) {
+            if ($conexion->query($sql) === TRUE) {
                 echo "New record created successfully";
                 // header('Location: Mostrarimg.php');
             } else {
