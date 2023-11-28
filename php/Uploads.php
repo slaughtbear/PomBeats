@@ -33,7 +33,7 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
             //move_uploaded_file($portada_tmp, $ruta);
 
             $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada, id)
-                    VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada', $id)";
+                    VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada', '$id')";
 
             if ($conexion->query($sql) === TRUE) {
                 echo "New record created successfully";
