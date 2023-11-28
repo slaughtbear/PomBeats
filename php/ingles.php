@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../img/nav-icon.png">
-    <title>Bienvenido a PomBeats</title>
+    <title>Welcome to PomBeats</title>
 </head>
 <body class="seccion-oscura">
     <!-- B A R R A   D E   N A V E G A C I O N -->
@@ -41,13 +41,13 @@
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href= "eventos.php">Eventos</a>
+                <a class="nav-link active text-white" aria-current="page" href= "eventos.php">Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="ingles.php">Traducir</a>
+                <a class="nav-link text-white" href="dashboard.php">Translate</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="cerrar_sesion.php">Cerrar sesión</a>
+                <a class="nav-link text-white" href="cerrar_sesion.php">Log out</a>
               </li>
             </ul>
           </div>
@@ -66,22 +66,22 @@
               <div class="carousel-item active c-item" data-bs-interval="5000">
                 <img src="../img/carousel1.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
-                    <p class="mt-5 fs-3 text-uppercase">Promociona tús proyectos</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Eventos Musicales</h1>
+                    <p class="mt-5 fs-3 text-uppercase">Promote your projects</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">Musical Events</h1>
                   </div>
               </div>
               <div class="carousel-item c-item" data-bs-interval="5000">
                 <img src="../img/carousel2.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
-                    <p class="mt-5 fs-3 text-uppercase">Variedad de eventos</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Diversidad</h1>
+                    <p class="mt-5 fs-3 text-uppercase">Arrays of Events</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">Diversity</h1>
                   </div>
               </div>
               <div class="carousel-item c-item" data-bs-interval="5000">
                 <img src="../img/carousel3.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
-                    <p class="mt-5 fs-3 text-uppercase">Conecta con artistas locales</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Comunidad</h1>
+                    <p class="mt-5 fs-3 text-uppercase">Connect with local artists</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">Community</h1>
                   </div>
               </div>
             </div>
@@ -98,7 +98,7 @@
 
     <!-- S O B R E   N O S O T R O S -->
     <div class="heading">
-      <h1 class="seccion-titulo">Sobre Nosotros</h1>
+      <h1 class="seccion-titulo">About Us</h1>
     </div>
     <div class="container">
       <section class="about">
@@ -106,8 +106,8 @@
           <img src="../img/img1.jpg" alt="Imagen Sobre Nosotros">
         </div>
         <div class="about-content">
-          <h2>Creando las bases de tus eventos</h2>
-          <p>En nuestra plataforma especializada en promoción de eventos musicales, ofrecemos servicios para planificar, organizar, y publicitar conciertos y festivales. Nuestro objetivo es crear experiencias únicas que conecten a los amantes de la música con los artistas de sus comunidades.</p>
+          <h2>Creating the basis for your events</h2>
+          <p>In our platform specialized in promoting musical events, we offer services to plan, organize, and advertise concerts and festivals. Our goal is to create unique experiences that connect music lovers with artists from their communities.</p>
           <a href="#" class="leer-mas">Conocenos</a>
         </div>
       </section>
@@ -120,34 +120,34 @@
           <!-- P R O M O C I O N -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-graph-up-arrow"></i>
-            <p class="servicios-titulo">Promoción</p>
-            <p>Utilizamos estrategias de marketing para poder dar a conocer tu evento a la audiencia correcta.</p>
+            <p class="servicios-titulo">Promotion</p>
+            <p>We use marketing strategies to make your event known to the right audience.</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-danger">Conciertos</span>
-              <span class="badge text-bg-danger">Festivales</span>
-              <span class="badge text-bg-danger">Cultura</span>
+              <span class="badge text-bg-danger">Concert</span>
+              <span class="badge text-bg-danger">Festivals</span>
+              <span class="badge text-bg-danger">Culture</span>
             </div>
           </div>
           <!-- G A L E R I A -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-easel"></i>
-            <p class="servicios-titulo">Galería</p>
-            <p>Contamos con una sección dedicada a mostrar eventos próximos con fechas, horarios, y ubicaciones. </p>
+            <p class="servicios-titulo">Gallery</p>
+            <p>We have a section dedicated to show upcoming events with dates, times, and locations.</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-danger">Imagenes</span>
-              <span class="badge text-bg-danger">Información</span>
-              <span class="badge text-bg-danger">Eventos</span>
+              <span class="badge text-bg-danger">Images</span>
+              <span class="badge text-bg-danger">Information</span>
+              <span class="badge text-bg-danger">Events</span>
             </div>
           </div>
           <!-- A C C E S I B I L I D A D -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-upload"></i>
-            <p class="servicios-titulo">Accesibilidad</p>
-            <p>En nustra plataforma puedes compartir tú evento musical siendo artísta independiente u organizador.</p>
+            <p class="servicios-titulo">Accessibility</p>
+            <p>In our platform you can share your musical event being an independent artist or organizer.</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-danger">Subir</span>
-              <span class="badge text-bg-danger">Promocionar</span>
-              <span class="badge text-bg-danger">Organizar</span>
+              <span class="badge text-bg-danger">Upload</span>
+              <span class="badge text-bg-danger">Promotion</span>
+              <span class="badge text-bg-danger">Organization</span>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@
     <!-- F O O T E R -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
       <img class="footer-logo" src="../img/granada.png" alt="Logo">
-      <p class="footer-texto text-center">Creando las bases de tus eventos. <br> ¡Publicita tus conciertos y festivales!</p>
+      <p class="footer-texto text-center">Creating the basis for your events <br> Advertise your concerts and festivals!</p>
       <div class="iconos-redes d-flex flex-wrap align-items-center justify-content-center">
         <!--Correo -->
         <a href="mailto:ivanaguirre368@gmail.com" target="_blank">
