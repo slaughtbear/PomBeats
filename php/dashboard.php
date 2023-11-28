@@ -36,7 +36,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
             <a class="navbar-brand" href="#">
-                <img src="img/logo-navbar.png" alt="Logo PomBeats" width="65">
+                <img src="../img/logo-navbar.png" alt="Logo PomBeats" width="65">
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
@@ -70,14 +70,14 @@
                   </div>
               </div>
               <div class="carousel-item c-item" data-bs-interval="5000">
-                <img src="img/carousel2.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/carousel2.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
                     <p class="mt-5 fs-3 text-uppercase">Variedad de eventos</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Diversidad</h1>
                   </div>
               </div>
               <div class="carousel-item c-item" data-bs-interval="5000">
-                <img src="img/carousel3.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="../img/carousel3.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption top-0 mt-4">
                     <p class="mt-5 fs-3 text-uppercase">Conecta con artistas locales</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Comunidad</h1>
@@ -102,7 +102,7 @@
     <div class="container">
       <section class="about">
         <div class="about-image pb-5">
-          <img src="img/img1.jpg" alt="Imagen Sobre Nosotros">
+          <img src="../img/img1.jpg" alt="Imagen Sobre Nosotros">
         </div>
         <div class="about-content">
           <h2>Creando las bases de tus eventos</h2>
