@@ -35,7 +35,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="dashboard.php">
                 <img src="../img/logo-navbar.png" alt="Logo PomBeats" width="65">
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
@@ -46,7 +46,7 @@
                 <a class="nav-link text-white" href="#">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="../index.php">Cerrar sesión</a>
+                <a class="nav-link text-white" href="index.php">Cerrar sesión</a>
               </li>
             </ul>
           </div>
