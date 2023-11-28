@@ -38,7 +38,6 @@ $conexion->close();
         <input type="date" name="fecha" placeholder="fecha" required>
         <!-- Cambié 'textarea' a 'text' para el campo de descripción -->
         <input type="text" name="descripcion" placeholder="descripcion" required>
-        <input type="file" name="portada" required>
         <input type="submit" name="enviar">
     </form>
 
