@@ -26,14 +26,14 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
         $check = getimagesize($portada_tmp);
 
         if ($check !== false) {
-            $id = $conexion->insert_id;  // Obtiene el ID recién insertado
+           
            
 
             // Corrige la ruta del archivo de destino
             //move_uploaded_file($portada_tmp, $ruta);
 
-            $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada, id)
-                    VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada', '$id')";
+            $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada,)
+                    VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada')";
 
             if ($conexion->query($sql) === TRUE) {
                 echo "New record created successfully";
