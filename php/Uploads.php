@@ -55,8 +55,8 @@ if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
  // Evita la redundancia en la definición de $target_dir
  $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
  VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$target_file')";
- 
-$sql->bind_param("ssssssssss", $Name, $Model, $Price, $Description, $Img, $Size, $ColorName, $StyleName, $BrandName, $Stock);
+
+$sql->bind_param("ssssssssss", $titulo, $lugar, $fecha, $description, $target_file);
 
 if ($sql->execute()) {
     echo "Registro exitoso";
