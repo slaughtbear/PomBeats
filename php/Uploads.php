@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 include 'conexion.php';
 
 
-$target_dir = "public/img-events";
+$target_dir = "../public/img-events";
 $uploadOk = 1;
 
 // Verifica si el formulario ha sido enviado y si el campo "portada" está presente en el array $_FILES
