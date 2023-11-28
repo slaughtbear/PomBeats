@@ -77,7 +77,7 @@
             <div class="about-content">
               <h2>Sube y promociona tús eventos</h2>
               <p>En esta sección aparecerán los eventos disponibles en tú comunidad.</p>
-              <a type="button" class="leer-mas" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <a type="button" href ="eventos.php" class="leer-mas" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Crear Evento
               </a>
             </div>
