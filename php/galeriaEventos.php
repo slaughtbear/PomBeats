@@ -1,5 +1,5 @@
 <?php
-    session_start();
+   /* session_start();
     if(!isset($_SESSION['usuario']))
     {
         echo '
@@ -10,9 +10,9 @@
         //header("location: index.php");
         session_destroy();
         die();
-    }
+    }*/
   ?>
-  <?php
+  
   include "conexion.php";
   $sql = "SELECT * FROM eventos";
   $result = $conn->query($sql);
