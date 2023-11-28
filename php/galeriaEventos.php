@@ -27,7 +27,7 @@ ini_set('display_errors', '1');
   } else {
     echo "0 results";
   }
-  $conn->close();
+  $conexion->close();
   ?>
 
 <!DOCTYPE html>
