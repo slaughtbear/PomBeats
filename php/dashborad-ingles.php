@@ -44,7 +44,7 @@
                 <a class="nav-link active text-white" aria-current="page" href= "eventos.php">Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="dashboard.php">Translate</a>
+                <a class="nav-link text-white" href="dashboard.php">ES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="cerrar_sesion.php">Log out</a>
