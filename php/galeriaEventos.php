@@ -20,10 +20,7 @@
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      echo '
-      <h2>'. $row["titulo"].'</h2>
-      <p>'. $row["descripcion"].'</p>
-      ';
+      $titulo=$row["titulo"];
     }
   } else {
     echo "0 results";
@@ -127,6 +124,7 @@
           <div class="mb-4">
               <label for="descripcion" class="form-label">Descripción</label>
               <input type="text" class="form-control custom-input" name="descripcion" id="descripcion" required>
+              <p><?php echo $titulo;?></p>
           </div>
           <!--
           <div class="mb-4">
