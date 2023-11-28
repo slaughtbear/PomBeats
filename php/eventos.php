@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
    include 'conexion.php';
    $idEventos=$_GET["idEventos"];
 $sql = "SELECT * FROM eventos where idEvntos = '$idEventos'";
