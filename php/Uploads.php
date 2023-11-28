@@ -13,7 +13,7 @@ $uploadOk = 1;
 // Verifica si el formulario ha sido enviado y si el campo "portada" está presente en el array $_FILES
 
 if (isset($_POST["enviar"]) && isset($_FILES["portada"])) {
-    $target_file = $target_dir . basename($_FILES["portada"]["name"]);
+    $target_file = $target_dir . basename($_FILES["portada"]["file"]);
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
     $portada_tmp = $_FILES["portada"]["tmp_name"];
     $titulo = $_POST["titulo"];
