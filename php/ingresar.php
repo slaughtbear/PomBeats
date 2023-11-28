@@ -18,7 +18,7 @@ if (mysqli_num_rows($validar_login) > 0) {
 
     // Verificar si el usuario tiene rol de administrador
     if ($usuario['rol'] == 1) {
-        header("Location: https://www.youtube.com/watch?v=AWjCxj9D_Ko&t=32s");
+        header("Location: ../administrador.php");
         exit;
     } else {
         header("Location: dashboard.php");
