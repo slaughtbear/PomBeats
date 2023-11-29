@@ -235,7 +235,7 @@ input:hover
         margin: 0 auto;
     }
     .img-custom {
-        width: 300px; /* Ancho deseado */
-        height: 200px; /* Alto deseado */
+        width: 150px; /* Ancho deseado */
+        height: 100px; /* Alto deseado */
     }
 }
