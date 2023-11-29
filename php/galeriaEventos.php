@@ -18,11 +18,23 @@ ini_set('display_errors', '1');
 
   include "conexion.php";
 
-  $con = conection();
-
+  
   $sql = "SELECT * FROM eventos";
-  $query = mysqli_query($con, $sql);
+  $result = $conexion->query($sql);
 
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      $idEventos=$row["idEventos"];
+      $titulo=$row["titulo"];
+      $lugar=$row["lugar"];
+      $fecha=$row["fecha"];
+      $descripcion=$row["descripcion"];
+    }
+  } else {
+    echo "0 results";
+  }
+  $conexion->close();
   ?>
 
 <!DOCTYPE html>
@@ -140,12 +152,13 @@ ini_set('display_errors', '1');
 </div>
 
   <div class="evento-container">
-  <?php while($row = mysqli_fetch_array($query)): ?>
-    <h2><p><?= $row["idEventos"] ?></p></h2>
-    <p><p><?= $row["titulo"] ?></p></p>
-    <p><p><<?= $row["lugar"] ?></p></p>
+
+    <h2><p><?php echo $titulo;?></p></h2>
+    <p><p><?php echo $idEventos;?></p></p>
+    <p><p><?php echo $descripcion;?></p></p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
+
  
 
 
