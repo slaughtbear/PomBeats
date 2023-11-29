@@ -41,6 +41,10 @@
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href= "suscribción.php">Subscripcion</a>
+              </li>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
                 <a class="nav-link active text-white" aria-current="page" href= "galeriaEventos.php">Eventos</a>
               </li>
               <li class="nav-item">
