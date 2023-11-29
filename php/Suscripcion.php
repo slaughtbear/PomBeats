@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-  <title>Bootstrap 5.0 Pricing Table</title>
+  <title>Pombeats+</title>
 
   <style>
 
@@ -64,15 +64,15 @@
             <div class="card-body">
              
               <h5 class="card-title">Basic</h5>
-              <small class='text-muted'>Individual</small>
+              <small class='text-muted'></small>
               <br><br>
-              <span class="h2">$8</span>/month
+              <span class="h2">free</span>
               <br><br>
               <div class="d-grid my-3">
                 <button class="btn btn-outline-dark btn-block">Select</button>
               </div>
               <ul>
-                <li>Cras justo odio</li>
+                <li>3 publicaciones * 6 meses</li>
                 <li>Dapibus ac facilisis in</li>
                 <li>Vestibulum at eros</li>
                 
