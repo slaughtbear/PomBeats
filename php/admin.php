@@ -7,10 +7,19 @@
                 alert("Por favor debes iniciar sesión");
             </script>
         ';
-        //header("location: index.php");
+        header("location: index.php");
         session_destroy();
         die();
     }
+?>
+
+<?php
+    include ("conexion.php");
+
+    $con = connection();
+
+    $sql = "SELECT * FROM eventos";
+    $query = mysqli_query($con, $sql);
 ?>
 
 <!DOCTYPE html>
