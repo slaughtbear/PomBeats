@@ -140,16 +140,12 @@ ini_set('display_errors', '1');
   <div class="evento-container">
   <?php while($row = mysqli_fetch_array($query)): ?>
                 
-                    <th> <?= $row["idEventos"] ?> </th>
-                    <th> <?= $row["titulo"] ?> </th>
-                    <th> <?= $row["lugar"] ?> </th>
-                    <th> <?= $row["fecha"] ?> </th>
-                    <th> <?= $row["descripcion"] ?> </th>
+                    
 
-    <h2><p><?= $row["idEventos"] ?></p></h2>
-    <p><p><?= $row["titulo"] ?></p></p>
-    <p><p><?= $row["lugar"] ?></p></p>
-    <a href="pagina_nueva.html" class="boton">Ir al evento</a>
+      <p><p><?= $row["titulo"] ?></p></p>
+      <p><p><?= $row["lugar"] ?></p></p>
+      <p><p><?= $row["descripcion"] ?></p></p>
+      <a href="pagina_nueva.html" class="boton">Ir al evento</a>
                 <?php endwhile; ?>
     
   </div> 
