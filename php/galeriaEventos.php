@@ -153,8 +153,8 @@ ini_set('display_errors', '1');
 
   <div class="evento-container">
 
-    <h2><p><?php $row["titulo"];?></p></h2>
-    <p><p><?php $row["descripcion"];?></p></p>
+    <h2><p><?= $row["titulo"];?></p></h2>
+    <p><p><?= $row["descripcion"];?></p></p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
   
