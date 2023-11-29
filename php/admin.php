@@ -2,10 +2,8 @@
     session_start(); // Inicia sesión
     include ("conexion.php");
 
-    $con = connection();
-
     $sql = "SELECT * FROM eventos";
-    $query = mysqli_query($con, $sql);
+    $query = mysqli_query($conexion, $sql);
 ?>
 
 <!DOCTYPE html>
