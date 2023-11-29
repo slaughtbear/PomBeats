@@ -139,21 +139,19 @@ ini_set('display_errors', '1');
 
   <div class="evento-container">
   <?php while($row = mysqli_fetch_array($query)): ?>
-                <tr>
+                
                     <th> <?= $row["idEventos"] ?> </th>
                     <th> <?= $row["titulo"] ?> </th>
                     <th> <?= $row["lugar"] ?> </th>
                     <th> <?= $row["fecha"] ?> </th>
                     <th> <?= $row["descripcion"] ?> </th>
 
-                    <th><a href="php/editarEvento.php?idEventos=<?= $row["idEventos"] ?>" class="btn btn-primary">Editar</a></th>
-                    <th><a href="php/eliminarEvento.php?idEventos=<?=$row["idEventos"]?>" class="btn btn-danger">Eliminar</a></th>
-                </tr>
-                <?php endwhile; ?>
-    <h2><p><?php echo $titulo;?></p></h2>
-    <p><p><?php echo $idEventos;?></p></p>
-    <p><p><?php echo $descripcion;?></p></p>
+    <h2><p><?= $row["idEventos"] ?></p></h2>
+    <p><p><?= $row["titulo"] ?></p></p>
+    <p><p><?= $row["lugar"] ?></p></p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
+                <?php endwhile; ?>
+    
   </div> 
 
  
