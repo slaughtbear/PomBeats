@@ -143,8 +143,9 @@ ini_set('display_errors', '1');
             
     <h2><p><?= $row["titulo"] ?></p></h2>
     <p><p><?= $row["lugar"] ?></p></p>
+    <p><p><?= $row["fecha"] ?></p></p>
     <p><p><?= $row["descripcion"] ?></p></p>
-    <img src= <?= $row["portada"] ?>> 
+    <img src= <?= $row["portada"] ?> widt = "50"> 
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
     <?php endwhile; ?>
     
