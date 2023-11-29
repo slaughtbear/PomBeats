@@ -23,6 +23,7 @@ ini_set('display_errors', '1');
     // output data of each row
     while($row = $result->fetch_assoc()) {
       $titulo=$row["titulo"];
+      $descripcion=$row["descripcion"];
     }
   } else {
     echo "0 results";
