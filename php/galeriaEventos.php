@@ -22,19 +22,7 @@ ini_set('display_errors', '1');
   $sql = "SELECT * FROM eventos";
   $result = $conexion->query($sql);
 
-  if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-      $idEventos=$row["idEventos"];
-      $titulo=$row["titulo"];
-      $lugar=$row["lugar"];
-      $fecha=$row["fecha"];
-      $descripcion=$row["descripcion"];
-    }
-  } else {
-    echo "0 results";
-  }
-  $conexion->close();
+  
   ?>
 
 <!DOCTYPE html>
@@ -152,12 +140,15 @@ ini_set('display_errors', '1');
 </div>
 
   <div class="evento-container">
-
+  <?php if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()); ?> 
+    
     <h2><p><?= $row["titulo"];?></p></h2>
     <p><p><?= $row["descripcion"];?></p></p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
-  
+  <?php endwhile; ?>
  
 
 
