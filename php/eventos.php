@@ -44,7 +44,6 @@ $conexion->close();
     
   
    <?php
-  echo $titulo;
 ?>
 </body>
 </html>
