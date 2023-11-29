@@ -2,7 +2,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
-include 'conexion.php'
+include 'conexion.php';
 $titulo = $_POST['titulo'];
 $lugar = $_POST['lugar'];
 $fecha = $_POST['fecha'];
