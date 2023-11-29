@@ -195,6 +195,7 @@ input:hover
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    
   }
   
   .boton {
@@ -232,5 +233,9 @@ input:hover
     {
         width: 80%;
         margin: 0 auto;
+    }
+    .img-custom {
+        width: 300px; /* Ancho deseado */
+        height: 200px; /* Alto deseado */
     }
 }
