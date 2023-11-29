@@ -140,10 +140,11 @@ ini_set('display_errors', '1');
   <div class="evento-container">
   <?php while($row = mysqli_fetch_array($query)): ?>
                 
-    <img src= <?= $row["portada"] ?>>         
+            
     <h2><p><?= $row["titulo"] ?></p></h2>
     <p><p><?= $row["lugar"] ?></p></p>
     <p><p><?= $row["descripcion"] ?></p></p>
+    <img src= <?= $row["portada"] ?>> 
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
     <?php endwhile; ?>
     
