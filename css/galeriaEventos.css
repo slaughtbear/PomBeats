@@ -157,8 +157,36 @@
 .modal-content, .modal-footer, .modal-header /* Elimina los bordes del formulario del modal */
 {
     border: none;
-    background-color: rgb(48, 9, 9);
+    background-color: rgb(15, 15, 15);
+}
+.btn-custom
+{
+    background-color: rgb(158, 43, 43);
+}
 
+.btn-custom:hover
+{
+    background-color: rgb(209, 5, 5);
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para suavizar el cambio de color de fondo */
+}
+
+
+.custom-input
+{
+    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus 
+{
+    border-color: rgb(209, 5, 5);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+input:hover 
+{
+    border-color: rgb(158, 43, 43); /* Cambia el color del borde al pasar el mouse sobre el input */
 }
 
 /* E V E N T O S */
