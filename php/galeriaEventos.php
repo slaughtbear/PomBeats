@@ -145,7 +145,7 @@ ini_set('display_errors', '1');
     <p><p><?= $row["lugar"] ?></p></p>
     <p><p><?= $row["fecha"] ?></p></p>
     <p><p><?= $row["descripcion"] ?></p></p>
-    <img clas =".img-custom "src= <?= $row["portada"] ?>> 
+    <img class=".img-custom "src= <?= $row["portada"] ?>> 
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
     <?php endwhile; ?>
     
