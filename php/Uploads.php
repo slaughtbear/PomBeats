@@ -6,10 +6,11 @@ ini_set('display_errors', '1');
 $titulo = $_POST['titulo'];
 $lugar = $_POST['lugar'];
 $fecha = $_POST['fecha'];
+$descripcion = $_['descripcion'];
 
 // Use prepared statements to prevent SQL injection
-$sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion, portada)
- VALUES ('$titulo', '$lugar', '$fecha', '$descripcion', '$portada')";
+$sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion)
+ VALUES ('$titulo', '$lugar', '$fecha', '$descripcion')";
 
 if ($sql->execute()) {
     echo "Registro exitoso";
