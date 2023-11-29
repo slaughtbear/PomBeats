@@ -15,27 +15,13 @@ ini_set('display_errors', '1');
     }*/
   ?>
   <?php
+    include ("conexion.php");
 
-  include "conexion.php";
+    $con = connection();
 
-  
-  $sql = "SELECT * FROM eventos";
-  $result = $conexion->query($sql);
-
-  if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-      $idEventos=$row["idEventos"];
-      $titulo=$row["titulo"];
-      $lugar=$row["lugar"];
-      $fecha=$row["fecha"];
-      $descripcion=$row["descripcion"];
-    }
-  } else {
-    echo "0 results";
-  }
-  $conexion->close();
-  ?>
+    $sql = "SELECT * FROM eventos";
+    $query = mysqli_query($con, $sql);
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -152,10 +138,18 @@ ini_set('display_errors', '1');
 </div>
 
   <div class="evento-container">
+  <?php while($row = mysqli_fetch_array($query)): ?>
+                <tr>
+                    <th> <?= $row["idEventos"] ?> </th>
+                    <th> <?= $row["titulo"] ?> </th>
+                    <th> <?= $row["lugar"] ?> </th>
+                    <th> <?= $row["fecha"] ?> </th>
+                    <th> <?= $row["descripcion"] ?> </th>
 
-    <h2><p><?php echo $titulo;?></p></h2>
-    <p><p><?php echo $idEventos;?></p></p>
-    <p><p><?php echo $descripcion;?></p></p>
+                    <th><a href="php/editarEvento.php?idEventos=<?= $row["idEventos"] ?>" class="btn btn-primary">Editar</a></th>
+                    <th><a href="php/eliminarEvento.php?idEventos=<?=$row["idEventos"]?>" class="btn btn-danger">Eliminar</a></th>
+                </tr>
+                <?php endwhile; ?>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
 
