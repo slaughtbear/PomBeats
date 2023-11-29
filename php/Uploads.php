@@ -12,19 +12,13 @@ $descripcion = $_POST['descripcion'];
 $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion)
  VALUES ('$titulo', '$lugar', '$fecha', '$descripcion')";
 
-if ($sql->mysqli_num_rows()) {
-    echo "Registro exitoso";
-    echo '<script>
-            setTimeout(function() {
-                window.location.href = "galeriaEventos.php";
-            }, 0);
-          </script>';
-} else {
-    echo "Error: " . $sql->error;
-}
-
-// Close the connection after use
-$conn->close();
+if ($conexion->query($sql) === TRUE) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . $conexion->error;
+  }
+  
+  $conexion->close();
 
 /*$sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion)
  VALUES ('$titulo', '$lugar', '$fecha', '$descripcion')";
