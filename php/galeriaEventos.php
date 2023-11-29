@@ -140,9 +140,9 @@ ini_set('display_errors', '1');
 </div>
 
   <div class="evento-container">
-  <?php if ($result->num_rows > 0) {
+
     // output data of each row
-    while($row = $result->fetch_assoc()); ?> 
+    <?php while($row = $result->fetch_assoc()); ?> 
     
     <h2><p><?= $row["titulo"];?></p></h2>
     <p><p><?= $row["descripcion"];?></p></p>
