@@ -18,7 +18,7 @@ ini_set('display_errors', '1');
 
   include "conexion.php";
   $idEventos=$_GET['idEventos']
-  $sql = "SELECT * FROM eventos where idEventos = $idEventos";
+  $sql = "SELECT titulo,lugar,fecha,descripcion FROM eventos where idEventos = $idEventos";
   $result = $conexion->query($sql);
 
   if ($result->num_rows > 0) {
