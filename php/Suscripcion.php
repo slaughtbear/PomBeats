@@ -73,8 +73,8 @@
               </div>
               <ul>
                 <li>3 publicaciones * 6 meses</li>
-                <li>Dapibus ac facilisis in</li>
-                <li>Vestibulum at eros</li>
+                <!--<li>Dapibus ac facilisis in</li>
+                <li>Vestibulum at eros</li>-->
                 
               </ul>
             </div>
@@ -89,15 +89,15 @@
               <h5 class="card-title">Standard</h5>
               <small class='text-muted'>Small Business</small>
               <br><br>
-              <span class="h2">$20</span>/month
+              <span class="h2">$5</span>/month
               <br><br>
               <div class="d-grid my-3">
                 <button class="btn btn-outline-dark btn-block">Select</button>
               </div>
               <ul>
-                <li>Cras justo odio</li>
-                <li>Dapibus ac facilisis in</li>
-                <li>Vestibulum at eros</li>
+                <li>publicaciones ilimitadas </li>
+                <!--<li>Dapibus ac facilisis in</li>
+                <li>Vestibulum at eros</li>-->
                 
               </ul>
             </div>
@@ -109,18 +109,18 @@
           <div class="card card3 h-100">
             <div class="card-body">
              
-              <h5 class="card-title">Premium</h5>
-              <small class='text-muted'>Large Company</small>
+              <h5 class="card-title">Proximamente</h5>
+              <small class='text-muted'>Streaming</small>
               <br><br>
-              <span class="h2">$40</span>/month
+              <span class="h2"></span>/
               <br><br>
               <div class="d-grid my-3">
-                <button class="btn btn-outline-dark btn-block">Select</button>
+                <button class="btn btn-outline-dark btn-block">Proximamente</button>
               </div>
               <ul>
-                <li>Cras justo odio</li>
-                <li>Dapibus ac facilisis in</li>
-                <li>Vestibulum at eros</li>
+                <li>Subir canciones</li>
+                <li>Nube ilimitada</li>
+                <li>Sin auncios</li>
                 
               </ul>
             </div>
