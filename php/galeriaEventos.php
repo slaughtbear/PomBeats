@@ -17,7 +17,7 @@ ini_set('display_errors', '1');
   <?php
     include ("conexion.php");
 
-    $con = connection();
+  
 
     $sql = "SELECT * FROM eventos";
     $query = mysqli_query($con, $sql);
