@@ -156,10 +156,7 @@ ini_set('display_errors', '1');
     <p><p><?php echo $descripcion;?></p></p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
-  <?php
-
-  ?>
- 
+  
 
 
     <footer>
