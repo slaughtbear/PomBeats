@@ -152,8 +152,11 @@ ini_set('display_errors', '1');
 </div>
 
   <div class="evento-container">
-    <h2><p><?php echo $titulo;?></p></h2>
-    <p><p><?php echo $descripcion;?></p></p>
+    <div>
+      <h2><?php echo $titulo;?></h2>
+      <b><?php echo $descripcion;?></b>
+      <b></b>
+    </div>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
   
