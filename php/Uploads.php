@@ -6,7 +6,7 @@ ini_set('display_errors', '1');
 $titulo = $_POST['titulo'];
 $lugar = $_POST['lugar'];
 $fecha = $_POST['fecha'];
-$descripcion = $_['descripcion'];
+$descripcion = $_POST['descripcion'];
 
 // Use prepared statements to prevent SQL injection
 $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion)
