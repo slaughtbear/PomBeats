@@ -25,7 +25,7 @@ ini_set('display_errors', '1');
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      //$idEvento=$row["idEvento"];
+      $idEventos=$row["idEventos"];
       $titulo=$row["titulo"];
       $lugar=$row["lugar"];
       $fecha=$row["fecha"];
