@@ -15,7 +15,7 @@ if ($sql->execute()) {
     echo "Registro exitoso";
     echo '<script>
             setTimeout(function() {
-                window.location.href = "eventos.php";
+                window.location.href = "galeriaEventos.php";
             }, 0);
           </script>';
 } else {

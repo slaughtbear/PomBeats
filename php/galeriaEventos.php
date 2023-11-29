@@ -22,6 +22,7 @@ ini_set('display_errors', '1');
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
+
       $titulo=$row["titulo"];
       $descripcion=$row["descripcion"];
     }
@@ -112,7 +113,7 @@ ini_set('display_errors', '1');
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="galeriaEventos.php" method="POST">
+        <form action="Uploads.php" method="POST">
           <div class="mb-4">
               <label for="titulo" class="form-label text-white">Título</label>
               <input type="text" class="form-control custom-input" name="titulo" id="titulo" required>
