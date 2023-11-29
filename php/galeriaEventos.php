@@ -141,7 +141,7 @@ ini_set('display_errors', '1');
   <?php while($row = mysqli_fetch_array($query)): ?>
                 
                   
-    <p2><p><?= $row["titulo"] ?></p></h2>
+    <h2><p><?= $row["titulo"] ?></p></h2>
     <p><p><?= $row["lugar"] ?></p></p>
     <p><p><?= $row["descripcion"] ?></p></p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
