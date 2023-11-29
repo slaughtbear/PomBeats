@@ -152,6 +152,13 @@ ini_set('display_errors', '1');
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
 
+  <div class="evento-container">
+    <h2><p><?php echo $titulo;?></p></h2>
+    <p><p><?php echo $descripcion;?></p></p>
+    <a href="pagina_nueva.html" class="boton">Ir al evento</a>
+  </div> 
+
+
     <footer>
       <div class="derechos-autor text-center">PomBeats (2023) &#169;</div>
     </footer>
