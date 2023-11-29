@@ -12,7 +12,7 @@ $descripcion = $_POST['descripcion'];
 $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion)
  VALUES ('$titulo', '$lugar', '$fecha', '$descripcion')";
 
-if ($sql->execute()) {
+if ($sql->mysqli_num_rows()) {
     echo "Registro exitoso";
     echo '<script>
             setTimeout(function() {
