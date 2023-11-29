@@ -146,7 +146,7 @@ ini_set('display_errors', '1');
     <p><p><?= $row["fecha"] ?></p></p>
     <p><p><?= $row["descripcion"] ?></p></p>
     <img class="img-custom "src= <?= $row["portada"] ?> style="width: 300px; height: auto;"> 
-    <a href="pagina_nueva.html" class="boton">Ir al evento</a>
+    <!--<a href="pagina_nueva.html" class="boton">Ir al evento</a>-->
     <?php endwhile; ?>
     
   </div> 
