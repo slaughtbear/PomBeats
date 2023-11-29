@@ -76,7 +76,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrar Evento</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close text-danger" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form action="Uploads.php" method="POST">
@@ -104,7 +104,7 @@
           </div>
           -->
           <div class="d-grid">
-            <button type="submit" class="btn btn-custom fw-bold">Registrarme</button>
+            <button type="submit" class="btn btn-custom fw-bold text-white">Registrarme</button>
           </div>
       </form>
       </div>
@@ -113,17 +113,10 @@
 </div>
 
   <div class="evento-container">
-
-    // output data of each row
-    <?php while($row = $result->fetch_assoc()); ?> 
-    
     <h2>Titulo</h2>
     <p>Descripcion</p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
-  <?php endwhile; ?>
- 
-
 
     <footer>
       <div class="derechos-autor text-center">PomBeats (2023) &#169;</div>
