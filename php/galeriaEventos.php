@@ -144,6 +144,11 @@ ini_set('display_errors', '1');
   </div>
 </div>
 
+  <div class="evento-container">
+    <h2>Nombre del Evento</h2>
+    <p>Descripción del evento</p>
+    <a href="pagina_nueva.html" class="boton">Ir al evento</a>
+  </div> 
 
     <footer>
       <div class="derechos-autor text-center">PomBeats (2023) &#169;</div>
