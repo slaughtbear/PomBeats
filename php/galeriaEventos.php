@@ -140,7 +140,7 @@ ini_set('display_errors', '1');
   <div class="evento-container">
   <?php while($row = mysqli_fetch_array($query)): ?>
                 
-                  
+    <h2><p><?= $row["portada"] ?></p></h2>             
     <h2><p><?= $row["titulo"] ?></p></h2>
     <p><p><?= $row["lugar"] ?></p></p>
     <p><p><?= $row["descripcion"] ?></p></p>
