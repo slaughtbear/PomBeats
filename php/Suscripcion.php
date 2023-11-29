@@ -63,16 +63,16 @@
           <div class="card card1 h-100">
             <div class="card-body">
              
-              <h5 class="card-title">Basic</h5>
+              <h5 class="card-title">Básico</h5>
               <small class='text-muted'></small>
               <br><br>
-              <span class="h2">free</span>
+              <span class="h2">$80</span>
               <br><br>
               <div class="d-grid my-3">
                 <button class="btn btn-outline-dark btn-block">Select</button>
               </div>
               <ul>
-                <li>3 publicaciones * 6 meses</li>
+                <li>Oportunidad de resaltar eventos en la galeria.</li>
                 <!--<li>Dapibus ac facilisis in</li>
                 <li>Vestibulum at eros</li>-->
                 
@@ -87,15 +87,15 @@
             <div class="card-body">
              
               <h5 class="card-title">Standard</h5>
-              <small class='text-muted'>Small Business</small>
+              <!--<small class='text-muted'>Small Business</small>-->
               <br><br>
-              <span class="h2">$5</span>/month
+              <span class="h2">$8</span>/month
               <br><br>
               <div class="d-grid my-3">
                 <button class="btn btn-outline-dark btn-block">Select</button>
               </div>
               <ul>
-                <li>publicaciones ilimitadas </li>
+                <li>Banners, anuncios y boletines de correo electronico</li>
                 <!--<li>Dapibus ac facilisis in</li>
                 <li>Vestibulum at eros</li>-->
                 
