@@ -1,5 +1,5 @@
 <?php
-
+    session_start(); // Inicia sesión
     include ("conexion.php");
 
     $con = connection();

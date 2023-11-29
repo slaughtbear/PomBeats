@@ -89,7 +89,7 @@
               <h5 class="card-title">Standard</h5>
               <!--<small class='text-muted'>Small Business</small>-->
               <br><br>
-              <span class="h2">$8</span>/month
+              <span class="h2">$120</span>/month
               <br><br>
               <div class="d-grid my-3">
                 <button class="btn btn-outline-dark btn-block">Select</button>
