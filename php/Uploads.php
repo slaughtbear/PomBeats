@@ -8,7 +8,7 @@ $lugar = $_POST['lugar'];
 $fecha = $_POST['fecha'];
 $descripcion = $_POST['descripcion'];
 
-// Use prepared statements to prevent SQL injection
+/* Use prepared statements to prevent SQL injection
 $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion)
  VALUES ('$titulo', '$lugar', '$fecha', '$descripcion')";
 
@@ -24,6 +24,18 @@ if ($sql->mysqli_num_rows()) {
 }
 
 // Close the connection after use
-$conn->close();
+$conn->close();*/
+
+$sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion)
+ VALUES ('$titulo', '$lugar', '$fecha', '$descripcion')";
+
+if ($conexion->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conexion->error;
+}
+
+$conexion->close();
+?>
 ?>
 
