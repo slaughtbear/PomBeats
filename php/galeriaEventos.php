@@ -24,14 +24,14 @@ ini_set('display_errors', '1');
 
   if ($result->num_rows > 0) {
     // output data of each row
-     
+    while($row = $result->fetch_assoc()) {
       $idEventos=$row["idEventos"];
       $titulo=$row["titulo"];
       $lugar=$row["lugar"];
       $fecha=$row["fecha"];
       $descripcion=$row["descripcion"];
     }
-   else {
+  } else {
     echo "0 results";
   }
   $conexion->close();
@@ -152,15 +152,12 @@ ini_set('display_errors', '1');
 </div>
 
   <div class="evento-container">
-    <?php while($row = $result->fetch_assoc())?>
-    <h2><p><?php $row["titulo"]; ?></p></h2>
-    <p><p><?php $row["lugar"];?></p></p>
-    <p><p><?php echo $descripcion;?></p></p>
+
+    <h2><p><?php $row["titulo"];?></p></h2>
+    <p><p><?php $row["descripcion"];?></p></p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
-  <?php
-
-  ?>
+  
  
 
 
