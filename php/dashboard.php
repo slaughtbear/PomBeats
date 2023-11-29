@@ -41,7 +41,7 @@
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href= "Suscripción.php">Suscripcion</a>
+                <a class="nav-link active text-white" aria-current="page" href= "Suscripcion.php">Suscripcion</a>
               </li>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
