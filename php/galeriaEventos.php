@@ -15,15 +15,18 @@ ini_set('display_errors', '1');
     }*/
   ?>
   <?php
+
   include "conexion.php";
-  $sql = "SELECT * FROM eventos";
+  $idEventos=$_GET['idEventos']
+  $sql = "SELECT * FROM eventos where idEventos = $idEventos";
   $result = $conexion->query($sql);
 
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-
       $titulo=$row["titulo"];
+      $lugar=$row["lugar"];
+      $fecha=$row["fecha"];
       $descripcion=$row["descripcion"];
     }
   } else {
@@ -151,7 +154,9 @@ ini_set('display_errors', '1');
     <p><p><?php echo $descripcion;?></p></p>
     <a href="pagina_nueva.html" class="boton">Ir al evento</a>
   </div> 
+  <?php
 
+  ?>
   <div class="evento-container">
     <h2><p><?php echo $titulo;?></p></h2>
     <p><p><?php echo $descripcion;?></p></p>
