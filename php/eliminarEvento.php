@@ -1,12 +1,11 @@
 <?php
     include ("conexion.php");
-    $con = connection();
 
-    $idbanda = $_GET['idbanda'];
-    $sql = "DELETE FROM bandas WHERE idbanda = '$idbanda'";
-    $query = mysqli_query($con, $sql);
+    $idEventos = $_GET['idEventos'];
+    $sql = "DELETE FROM eventos WHERE idEventos = '$idEventos'";
+    $query = mysqli_query($conexion, $sql);
     
     if($query){
-        header("Location: ../bandas.php");
+        header("Location: admin.php");
     };
 ?>
