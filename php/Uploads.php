@@ -13,7 +13,7 @@ $sql = "INSERT INTO eventos (titulo, lugar, fecha, descripcion)
  VALUES ('$titulo', '$lugar', '$fecha', '$descripcion')";
 
 if ($conexion->query($sql) === TRUE) {
-    echo "New record created successfully";
+    header ("location: galeriaEventos.php");
   } else {
     echo "Error: " . $sql . "<br>" . $conexion->error;
   }
