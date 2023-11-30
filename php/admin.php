@@ -1,8 +1,6 @@
 <?php
     include ("conexion.php");
 
-    $conexion = connection();
-
     $sql = "SELECT * FROM eventos";
     $query = mysqli_query($conexion, $sql);
 ?>
