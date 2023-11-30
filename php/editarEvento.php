@@ -6,6 +6,9 @@
     $sql = "SELECT * FROM eventos WHERE idEvento='$idEventos'";
     $query = mysqli_query($conexion, $sql);
     $row = mysqli_fetch_array($query);
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
 ?>
 
 <!DOCTYPE html>

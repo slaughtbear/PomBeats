@@ -1,10 +1,10 @@
+
 <?php
     include ("conexion.php");
 
     $sql = "SELECT * FROM eventos";
     $query = mysqli_query($conexion, $sql);
-?>
-
+?>*/
 <!DOCTYPE html>
 <html lang="es">
 <head>
