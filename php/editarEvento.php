@@ -1,5 +1,6 @@
 <?php
     include ("conexion.php");
+    $conexion = connection();
 
     $idEventos = $_GET['idEventos'];
 

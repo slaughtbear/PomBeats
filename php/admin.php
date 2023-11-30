@@ -1,6 +1,20 @@
 <?php
-    session_start(); // Inicia sesión
+    session_start();
+    if(!isset($_SESSION['usuario']))
+    {
+        echo '
+            <script>
+                alert("Por favor debes iniciar sesión");
+            </script>
+        ';
+        //header("location: index.php");
+        session_destroy();
+        die();
+    }
+
     include ("conexion.php");
+
+    $conexion = connection();
 
     $sql = "SELECT * FROM eventos";
     $query = mysqli_query($conexion, $sql);
