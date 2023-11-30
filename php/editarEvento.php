@@ -1,7 +1,7 @@
 <?php
     include ("conexion.php");
 
-    $idEventos = $_GET['idEventos'];
+    //$idEventos = $_GET['idEventos'];
 
     $sql = "SELECT * FROM eventos WHERE idEvento='$idEventos'";
     $query = mysqli_query($conexion, $sql);
