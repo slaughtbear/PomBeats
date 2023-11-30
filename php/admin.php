@@ -37,8 +37,8 @@
                     <th> <?= $row["fecha"] ?> </th>
                     <th> <?= $row["descripcion"] ?> </th>
 
-                    <th><a href="php/editarEvento.php?idEventos=<?= $row["idEventos"] ?>" class="btn btn-primary">Editar</a></th>
-                    <th><a href="php/eliminarEvento.php?idEventos=<?=$row["idEventos"]?>" class="btn btn-danger">Eliminar</a></th>
+                    <th><a href="editarEvento.php?idEventos=<?= $row["idEventos"] ?>" class="btn btn-primary">Editar</a></th>
+                    <th><a href="eliminarEvento.php?idEventos=<?=$row["idEventos"]?>" class="btn btn-danger">Eliminar</a></th>
                 </tr>
                 <?php endwhile; ?>
             </tbody>
