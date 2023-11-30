@@ -4,7 +4,7 @@
 
     $sql = "SELECT * FROM eventos";
     $query = mysqli_query($conexion, $sql);
-?>*/
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -37,7 +37,7 @@
                     <th> <?= $row["fecha"] ?> </th>
                     <th> <?= $row["descripcion"] ?> </th>
 
-                    <th><a href="editarEvento.php?idEventos=<?= $row["idEventos"] ?>" class="btn btn-primary">Editar</a></th>
+                    <th><a href="actualizarEvento.php?idEventos=<?= $row["idEventos"] ?>" class="btn btn-primary">Editar</a></th>
                     <th><a href="eliminarEvento.php?idEventos=<?=$row["idEventos"]?>" class="btn btn-danger">Eliminar</a></th>
                 </tr>
                 <?php endwhile; ?>
